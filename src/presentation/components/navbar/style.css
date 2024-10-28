@@ -4,7 +4,8 @@
   align-items: center;
   padding: 10px 50px;
   background-color: transparent;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(80px)
 }
 
 .navbar-options {

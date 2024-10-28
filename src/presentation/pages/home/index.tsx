@@ -107,8 +107,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="container-divider">
-          <div className="divider-home"
-          />
+          <div className="divider-home" />
         </div>
         <div className="container-home-beneficts"></div>
         <div className="container-home-contacto"></div>

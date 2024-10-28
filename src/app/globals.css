@@ -17,9 +17,10 @@ html {
 body {
   line-height: 1.5;
   color: #333;
-  background-color: rgba(255, 255, 255, 1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg, #EAF9DE 0%, rgba(250, 255, 246, 0) 100%);
+
 }
 
 /* Enlaces */
