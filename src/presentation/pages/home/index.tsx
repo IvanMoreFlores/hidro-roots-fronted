@@ -7,6 +7,7 @@ import HeroComponent from "./components/hero";
 import ProductsComponent from "./components/products";
 import DividerComponent from "./components/divider";
 import BenefictsComponent from "./components/beneficts";
+import FunctionsComponent from "./components/functions";
 
 const HomePage = () => {
   return (
@@ -17,7 +18,8 @@ const HomePage = () => {
         <ProductsComponent />
         <DividerComponent />
         <BenefictsComponent />
-        <div className="container-home-contacto"></div>
+        <DividerComponent />
+        <FunctionsComponent />
       </main>
       <FooterComponent />
     </div>
