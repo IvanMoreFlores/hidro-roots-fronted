@@ -1,0 +1,36 @@
+.container-home-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32;
+}
+
+.container-text-hero {
+  width: 441px;
+}
+
+.container-lottie-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-title-hero {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 52.8px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: rgba(36, 31, 28, 1);
+}
+
+.text-description-hero {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38.4px;
+  letter-spacing: -0.005em;
+  text-align: left;
+  color: rgba(36, 31, 28, 1);
+  margin-right: 20px;
+  margin-bottom: 50px;
+}

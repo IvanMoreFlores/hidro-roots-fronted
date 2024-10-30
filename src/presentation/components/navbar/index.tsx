@@ -1,10 +1,10 @@
-// src/presentation/components/ComponentNavbar.tsx
+// src/presentation/components/NavbarComponent.tsx
 import React from "react";
 import "./style.css";
 import Image from "next/image";
 //import { FaUser, FaShoppingCart } from "react-icons/fa"; // Puedes cambiar estos iconos si prefieres otros
 
-const ComponentNavbar: React.FC = () => {
+const NavbarComponent: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -33,4 +33,4 @@ const ComponentNavbar: React.FC = () => {
   );
 };
 
-export default ComponentNavbar;
+export default NavbarComponent;
