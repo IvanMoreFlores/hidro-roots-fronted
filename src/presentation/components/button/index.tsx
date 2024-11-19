@@ -14,17 +14,24 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
   icon?: React.ReactNode; // Para permitir agregar iconos
   loading?: boolean; // Para mostrar un estado de carga
+  width?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
   variant = "contained",
   icon,
   loading = false,
+  width = "auto",
   children,
   ...props
 }) => {
   return (
-    <button className={`button ${variant}`} disabled={loading} {...props}>
+    <button
+      style={{ width }}
+      className={`button ${variant}`}
+      disabled={loading}
+      {...props}
+    >
       {loading ? (
         <span className="loader" /> // Aquí puedes implementar un spinner si lo deseas
       ) : (

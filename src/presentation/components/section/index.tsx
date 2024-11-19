@@ -10,7 +10,9 @@ const Section01Component: React.FC = () => {
             <p>Captura</p>
           </div>
           <div className="cont-value">6.78 kg</div>
-          <div className="cont-description">Co2 en 3 semanas <br />x unidad</div>
+          <div className="cont-description">
+            Co2 en 3 semanas <br />x unidad
+          </div>
         </div>
 
         <div className="cont-item">
@@ -18,19 +20,21 @@ const Section01Component: React.FC = () => {
             <p>Reduce</p>
           </div>
           <div className="cont-value">95 %</div>
-          <div className="cont-description">La Huella Hídrica  <br /> de tu cultivo</div>
+          <div className="cont-description">
+            La Huella Hídrica <br /> de tu cultivo
+          </div>
         </div>
 
         <div className="cont-item">
           <div className="text-0">
             <p>Cultiva</p>
-            </div>
-            <div className="cont-value">400 %</div>
-            <div className="cont-description">Más por m2</div>
           </div>
+          <div className="cont-value">400 %</div>
+          <div className="cont-description">Más por m2</div>
         </div>
       </div>
-      );
+    </div>
+  );
 };
 
-      export default Section01Component;
+export default Section01Component;

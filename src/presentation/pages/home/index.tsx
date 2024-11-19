@@ -9,6 +9,8 @@ import DividerComponent from "./components/divider";
 import BenefictsComponent from "./components/beneficts";
 import FunctionsComponent from "./components/functions";
 import Section01Component from "@/presentation/components/section";
+import SpaceComponent from "./components/space";
+import ContactComponent from "@/presentation/components/contact";
 
 
 const HomePage = () => {
@@ -23,7 +25,8 @@ const HomePage = () => {
         <DividerComponent />
         <FunctionsComponent />
         <Section01Component/>
-      
+        <SpaceComponent />
+        <ContactComponent />
       </main>
       <FooterComponent />
     </div>
