@@ -19,7 +19,7 @@ body {
   color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(180deg, #EAF9DE 0%, rgba(250, 255, 246, 0) 100%);
+  /* background: linear-gradient(180deg, #EAF9DE 0%, rgba(250, 255, 246, 0) 100%); */
 
 }
 

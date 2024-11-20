@@ -3,9 +3,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column; 
-  margin-top: 50px; 
+  padding-top: 50px; 
   gap: 16px; 
-  
+  background: linear-gradient(180deg, #EAF9DE 0%, rgba(250, 255, 246, 0) 100%);
 }
 
 .container-text-hero-us {

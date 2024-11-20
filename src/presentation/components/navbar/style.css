@@ -3,8 +3,7 @@
   grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
   padding: 10px 50px;
-  background-color: transparent;
-  background: rgba(255, 255, 255, 0.4);
+  background-color: #EAF9DE;
   backdrop-filter: blur(80px)
 }
 

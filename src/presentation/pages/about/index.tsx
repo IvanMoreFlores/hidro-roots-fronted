@@ -16,10 +16,9 @@ const AboutPage = () => {
       <main className="content">
         <AboutUsComponent />
         <VisionComponent />
-        <DesignnComponent/>
+        <DesignnComponent />
         <ContComponent />
-  
-        <UneComponent/>
+        <UneComponent />
       </main>
       <FooterComponent />
     </div>
