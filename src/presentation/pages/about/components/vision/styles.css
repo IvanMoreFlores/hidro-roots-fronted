@@ -1,0 +1,50 @@
+.container-home-hero-vi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  gap: 50px;
+}
+
+body {
+  background: rgba(255, 255, 255, 1);
+  background: linear-gradient(180deg, #EAF9DE 0%, rgba(250, 255, 246, 0) 100%);
+  box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.2);
+
+}
+
+.vision-card {
+  
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(229, 229, 229, 1);
+
+}
+
+.vision-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: rgba(36, 31, 28, 1);
+  width: 666px;
+  height: 26px;
+
+}
+
+.vision-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: rgba(88, 85, 83, 1);
+  width: 666px;
+  height: 96px;
+
+}
