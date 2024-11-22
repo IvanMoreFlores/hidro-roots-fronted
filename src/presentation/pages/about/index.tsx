@@ -9,6 +9,7 @@ import DesignnComponent from "./components/designn";
 import ContComponent from "./components/contac";
 import UneComponent from "./components/unete";
 
+
 const AboutPage = () => {
   return (
     <div className="landing-page">
