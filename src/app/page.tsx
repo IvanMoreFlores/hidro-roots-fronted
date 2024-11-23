@@ -6,7 +6,7 @@ import HdirostoreComponent from "@/presentation/pages/hidro-store/index"
 
 export default function Home() {
   return (
-    < HdirostoreComponent/>
+    <MembershiPage/>
   
   );
 }

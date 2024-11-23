@@ -42,6 +42,7 @@ const HidroStor = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="container-productos-detail">
                     <div className="product-details">
                         <div className="detail-section">
                             <div
@@ -154,6 +155,7 @@ const HidroStor = () => {
                                 />
                             </button>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
