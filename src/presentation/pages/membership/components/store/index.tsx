@@ -7,6 +7,7 @@ const StoreComponent: React.FC = () => {
         <div className="container-store">
             <div className="grid-container-store">
                 <div className="card-store">
+
                     <Image
                         width={308}
                         height={400}
@@ -27,6 +28,9 @@ const StoreComponent: React.FC = () => {
                 </div>
 
                 <div className="card-store">
+                    <div className="div-envios">
+                        <p className="envios-1">ENVIOS A TODO EL PERÚ </p>
+                    </div>
                     <Image
                         width={308}
                         height={400}
@@ -79,7 +83,7 @@ const StoreComponent: React.FC = () => {
                         className="image"
                     />
                     <div className="card-content">
-                    <div className="text-hidro">
+                        <div className="text-hidro">
                             <p className="two-text-store-1">Quedan 4 unidades</p>
                             <p className="product-name">Hidro Boost 8 Plantas</p>
                             <p className="price">S/ 321.00</p>
@@ -93,6 +97,9 @@ const StoreComponent: React.FC = () => {
                 </div>
 
                 <div className="card-store">
+                <div className="div-envios">
+                        <p className="envios-1">ENVIOS A TODO EL PERÚ </p>
+                    </div>
                     <Image
                         width={308}
                         height={400}
@@ -121,11 +128,11 @@ const StoreComponent: React.FC = () => {
                         className="image"
                     />
                     <div className="card-content">
-                         <div className="text-hidro">
+                        <div className="text-hidro">
                             <p className="two-text-store-1">Quedan 4 unidades</p>
                             <p className="product-name">Hidro Boost 8 Plantas</p>
                             <p className="price">S/ 321.00</p>
-                         
+
                         </div>
                         <div className="store-div">
                             <button className="comprar-btn">Comprar</button>
@@ -144,9 +151,10 @@ const StoreComponent: React.FC = () => {
                     />
                     <div className="card-content">
                         <div className="text-hidro">
-                            <p className="two-text-store-1">Quedan 4 unidades</p>
+
                             <p className="product-name">Hidro Boost 8 Plantas</p>
                             <p className="price">S/ 321.00</p>
+                            <p className="two-text-store">S/ 321.00</p>
                         </div>
                         <div className="store-div">
                             <button className="comprar-btn">Comprar</button>
@@ -154,19 +162,19 @@ const StoreComponent: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="card-store">
-                <div className="card-store-padre">
-                    <div className="agotado-tag-a">
-                    <div className="tag1 agotado">Agotado</div>
-                    </div>
-                    <Image
-                        width={308}
-                        height={400}
-                        src="/img/store/one.png"
-                        alt="Hidro Boost 8 Plantas"
-                        className="image disabled"
-                    />
+                    <div className="card-store-padre">
+                        <div className="agotado-tag-a">
+                            <div className="tag1 agotado">Agotado</div>
+                        </div>
+                        <Image
+                            width={308}
+                            height={400}
+                            src="/img/store/one.png"
+                            alt="Hidro Boost 8 Plantas"
+                            className="image disabled"
+                        />
                     </div>
                     <div className="card-content">
                         <div className="text-hidro">
