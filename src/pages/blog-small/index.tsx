@@ -75,7 +75,7 @@ const BlogComponent = () => {
     }
   ];
 
-  const filterPosts = (filter) => {
+  const filterPosts = (filter: string) => {
     setActiveFilter(filter);
   };
 
@@ -84,7 +84,7 @@ const BlogComponent = () => {
     return blogPosts.filter(post => post.type === activeFilter);
   };
 
-  const handleAction = (url) => {
+  const handleAction = (url: string) => {
     window.location.href = url;
   };
 
