@@ -1,0 +1,39 @@
+.container-d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+  
+  }
+  
+  .container-title-d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .container-text-title-d {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text-title-d {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .text-description-d {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+  }
+  .div2{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
