@@ -10,7 +10,10 @@ import BenefictsComponent from "./components/beneficts";
 import FunctionsComponent from "./components/functions";
 import Section01Component from "@/components/section";
 import SpaceComponent from "./components/space";
-import ContactComponent from "@/components/contact";
+import ContComponent from "../about/components/contac";
+import UneComponent from "../about/components/unete";
+import CustComponent from "../Hydro-Members/components/customers";
+
 
 const HomePage = () => {
   return (
@@ -25,7 +28,9 @@ const HomePage = () => {
         <FunctionsComponent />
         <Section01Component />
         <SpaceComponent />
-        <ContactComponent />
+        <CustComponent />
+        <ContComponent />
+        <UneComponent />
       </main>
       <FooterComponent />
     </div>

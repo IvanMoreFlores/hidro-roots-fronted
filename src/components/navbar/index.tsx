@@ -13,7 +13,7 @@ const NavbarComponent: React.FC = () => {
         <Link href="/about">Nosotros</Link>
         <Link href="/membership">Productos</Link>
         <Link href="/Hydro-Members">Membresía</Link>
-        <Link href="/blogs">Blogs</Link>
+        <Link href="/blog-small">Blogs</Link>
         <Link href="/home/contacto">Contacto</Link>
       </div>
       <div className="navbar-icons">

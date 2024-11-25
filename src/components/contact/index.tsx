@@ -5,7 +5,7 @@ import Button from "../button";
 
 const ContactComponent = () => {
   return (
-    <div className="container-body-contact">
+    <div className="component-container-body-contact">
       <div className="container-title-contact">
         <div className="container-title-contact">
           <p className="text-title-contact">Contáctanos</p>
