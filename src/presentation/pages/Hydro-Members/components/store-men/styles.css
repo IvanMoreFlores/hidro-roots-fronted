@@ -1,12 +1,13 @@
 .container-home-hero-store-men {
     padding: 20px;
+    margin-bottom: 32px;
+    
 }
 
 .pricing-container-store-men {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
     gap: 12px;
 
 }
@@ -144,13 +145,12 @@
     flex-direction: column;
     opacity: 0px;
     justify-content: center;
-   
-font-size: 14px;
-font-weight: 700;
-line-height: 14px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 
 }
 
@@ -229,12 +229,12 @@ text-decoration-skip-ink: none;
     color: rgba(88, 85, 83, 1);
     width: 267px;
     height: 18px;
-font-size: 12px;
-font-weight: 600;
-line-height: 18px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 
 }
 
