@@ -1,10 +1,15 @@
+/* styles.css */
 .navbar {
+  position: fixed; /* Fija el navbar en la parte superior */
+  z-index: 1000;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
   padding: 10px 50px;
   background-color: #EAF9DE;
-  backdrop-filter: blur(80px)
+  backdrop-filter: blur(80px);
+  width: -webkit-fill-available;
+  transition: background-color 0.3s; /* Transición suave para cambios de color */
 }
 
 .navbar-options {

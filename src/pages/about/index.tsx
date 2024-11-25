@@ -8,7 +8,7 @@ import VisionComponent from "./components/vision";
 import DesignnComponent from "./components/designn";
 import ContComponent from "./components/contac";
 import UneComponent from "./components/unete";
-
+import "../../app/globals.css";
 
 const AboutPage = () => {
   return (

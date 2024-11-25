@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import "./styles.css";
+import "../../app/globals.css";
 import Nav1Component from "./components/navbar";
 import FooterComponent from "@/components/footer";
 import ContComponent from "././../about/components/contac";

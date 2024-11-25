@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import "../../app/globals.css";
 import "./styles.css";
 const BlogComponent = () => {
   const [activeFilter, setActiveFilter] = useState('todos');

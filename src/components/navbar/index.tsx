@@ -3,10 +3,16 @@ import "./style.css";
 import Image from "next/image";
 import Link from "next/link";
 
-const NavbarComponent: React.FC = () => {
+interface NavbarProps {
+  backgroundColor?: string;
+}
+
+const NavbarComponent: React.FC<NavbarProps> = ({
+  backgroundColor = "#EAF9DE",
+}) => {
   return (
-    <nav className="navbar">
-      <Link href="/home" className="navbar-logo">
+    <nav className="navbar" style={{ backgroundColor }}>
+      <Link href="/" className="navbar-logo">
         <Image src="/img/logo.png" alt="Logo" width={132} height={26} />
       </Link>
       <div className="navbar-options">

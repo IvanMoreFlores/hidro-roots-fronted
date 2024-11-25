@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import "./styles.css";
+import "../../app/globals.css";
 import NavComponent from "../membership/components/navbar";
 import FooterComponent from "@/components/footer";
 import HidroStor from "./components/hidro-store/index";
