@@ -12,7 +12,7 @@ import "../../app/globals.css";
 
 const AboutPage = () => {
   return (
-    <div className="landing-page">
+    <div className="about-landing-page">
       <NavbarComponent />
       <main className="content">
         <AboutUsComponent />

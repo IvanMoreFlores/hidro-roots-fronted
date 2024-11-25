@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column; 
-  padding-top: 50px; 
   gap: 16px; 
+  padding-top: 5%;
   background: linear-gradient(180deg, #EAF9DE 0%, rgba(250, 255, 246, 0) 100%);
 }
 

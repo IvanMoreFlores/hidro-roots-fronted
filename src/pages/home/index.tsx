@@ -17,7 +17,7 @@ import CustComponent from "../Hydro-Members/components/customers";
 
 const HomePage = () => {
   return (
-    <div className="landing-page">
+    <div className="home-landing-page">
       <NavbarComponent />
       <main className="content">
         <HeroComponent />
