@@ -6,9 +6,9 @@ import Link from "next/link";
 const NavbarComponent: React.FC = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">
+      <a href="/home" className="navbar-logo">
         <Image src="/img/logo.png" alt="Logo" width={132} height={26} />
-      </div>
+      </a>
       <div className="navbar-options">
         <Link href="/about">Nosotros</Link>
         <Link href="/membership">Productos</Link>
