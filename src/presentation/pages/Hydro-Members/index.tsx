@@ -9,7 +9,7 @@ import HComponent from "./components/hidro-m/index";
 import StormenComponent from "./components/store-men/index";
 import ServiComponent from "./components/servic/index";
 import SpacebComponent from "./components/build-m/index";
-import CustComponent from "./components/customers/index"
+import CustComponent from "./components/customers/index";
 
 const HydromenPage = () => {
   return (
@@ -18,9 +18,9 @@ const HydromenPage = () => {
       <main className="content">
         <HComponent />
         <StormenComponent />
-        <ServiComponent/>
-        <SpacebComponent/>
-       <CustComponent/> 
+        <ServiComponent />
+        <SpacebComponent />
+        <CustComponent />
         <ContComponent />
         <UneComponent />
       </main>

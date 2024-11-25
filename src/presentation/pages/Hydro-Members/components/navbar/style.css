@@ -6,8 +6,7 @@
   padding: 10px 50px;
   box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.2);
   backdrop-filter: blur(80px);
-
-
+  background-color: rgba(188, 235, 241, 0.6);
 }
 
 .navbar-options {

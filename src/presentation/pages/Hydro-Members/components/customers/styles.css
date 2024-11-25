@@ -1,134 +1,136 @@
 /* styles.css */
 .container-home-cus {
-    background-color: #f8fdf8;
-    padding: 20px;
-    height: 551px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-
+  background: linear-gradient(180deg, rgba(250, 255, 246, 0) 0%, #eaf9de 100%);
+  padding: 20px;
+  height: 551px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
 .testimonials-container {
-    text-align: center;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .testimonials-header {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .quotes-image {
-
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .testimonials-header h2 {
-
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: -0.01em;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: rgba(36, 31, 28, 1);
-    margin-bottom: 15px;
-
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(36, 31, 28, 1);
+  margin-bottom: 15px;
 }
 
 .testimonials-header p {
-    opacity: 70%;
-    color: rgba(36, 31, 28, 1);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25.6px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
+  opacity: 70%;
+  color: rgba(36, 31, 28, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .testimonial-content {
-
-    padding: 30px;
-    border-radius: 10px;
-    margin-bottom: 80px;
-    width: 898px;
-    height: 96px;
-    top: 233px;
-
-
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 80px;
+  width: 898px;
+  height: 96px;
+  top: 233px;
 }
 
 .testimonial-text {
-
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 32px;
-    letter-spacing: -0.005em;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 40px;
 }
 
 .testimonial-name {
-    color: rgba(36, 31, 28, 1);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
+  color: rgba(36, 31, 28, 1);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .testimonial-date {
-    color: rgba(88, 85, 83, 1);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
+  color: rgba(88, 85, 83, 1);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .testimonial-navigation {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .nav-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    transition: transform 0.2s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.2s ease;
 }
 
 .nav-button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .arrow-image {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 @media (max-width: 768px) {
-    .testimonials-container {
-        padding: 20px;
-    }
+  .testimonials-container {
+    padding: 20px;
+  }
 
-    .testimonials-header h2 {
-        font-size: 24px;
-    }
+  .testimonials-header h2 {
+    font-size: 24px;
+  }
 
-    .testimonial-text {
-        font-size: 16px;
-    }
+  .testimonial-text {
+    font-size: 16px;
+  }
+}
+
+.testimonial-content {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
 }
