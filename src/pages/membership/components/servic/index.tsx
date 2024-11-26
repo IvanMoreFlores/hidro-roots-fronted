@@ -2,7 +2,7 @@ import Button from "@/components/button";
 import React from "react";
 import "./styles.css";
 import Image from "next/image";
-import DividerComponent from "../../../membership/components/divider/index";
+import DividerComponent from "../../../product/components/divider/index";
 
 const ServiComponent: React.FC = () => {
   return (

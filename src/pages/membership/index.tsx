@@ -3,21 +3,25 @@ import React from "react";
 import "./styles.css";
 import "../../app/globals.css";
 import FooterComponent from "@/components/footer";
-import MenComponent from "./components/membres";
-import ImpComponent from "./components/inputs";
-import ContComponent from "././../about/components/contac";
-import UneComponent from "././../about/components/unete";
-import StoreComponent from "./components/store"
+import ContComponent from "../about/components/contac";
+import UneComponent from "../about/components/unete";
+import HComponent from "./components/hidro-m/index";
+import StormenComponent from "./components/store-men/index";
+import ServiComponent from "./components/servic/index";
+import SpacebComponent from "./components/build-m/index";
+import CustComponent from "./components/customers/index";
 import NavbarComponent from "@/components/navbar";
 
-const MembershiPage = () => {
+const HydromenPage = () => {
   return (
-    <div className="landing-page">
-      <NavbarComponent backgroundColor="rgba(255, 255, 255, 0.4)" />
+    <div className="memberships-landing-page">
+      <NavbarComponent backgroundColor="rgba(188, 235, 241, 0.6)" />
       <main className="content">
-        <MenComponent/>
-        <ImpComponent/>
-        <StoreComponent/>
+        <HComponent />
+        <StormenComponent />
+        <ServiComponent />
+        <SpacebComponent />
+        <CustComponent />
         <ContComponent />
         <UneComponent />
       </main>
@@ -26,4 +30,4 @@ const MembershiPage = () => {
   );
 };
 
-export default MembershiPage;
+export default HydromenPage;

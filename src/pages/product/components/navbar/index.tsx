@@ -3,7 +3,7 @@ import "./style.css";
 import Image from "next/image";
 import Link from "next/link";
 
-const Nav1Component: React.FC = () => {
+const NavComponent: React.FC = () => {
   return (
     <nav className="navbar">
       <Link href="/home" className="navbar-logo">
@@ -33,4 +33,4 @@ const Nav1Component: React.FC = () => {
   );
 };
 
-export default Nav1Component;
+export default NavComponent;

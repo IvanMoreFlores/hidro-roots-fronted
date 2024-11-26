@@ -12,7 +12,7 @@ import Section01Component from "@/components/section";
 import SpaceComponent from "./components/space";
 import ContComponent from "../about/components/contac";
 import UneComponent from "../about/components/unete";
-import CustComponent from "../Hydro-Members/components/customers";
+import CustComponent from "../membership/components/customers";
 
 
 const HomePage = () => {

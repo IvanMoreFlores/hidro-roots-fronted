@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import DividerComponent from "../../../membership/components/divider";
+import DividerComponent from "../../../product/components/divider";
 
 const BuildComponent: React.FC = () => {
   return (

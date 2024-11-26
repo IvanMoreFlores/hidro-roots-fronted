@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 import Image from "next/image";
-import DividerComponent from "../../../membership/components/divider/index";
+import DividerComponent from "../../../product/components/divider/index";
 import Dropdown from "./Dropdown";
 
 const HComponent = () => {

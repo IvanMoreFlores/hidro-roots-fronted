@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
 import Image from "next/image";
-import DividerComponent from "../../../membership/components/divider/index";
+import DividerComponent from "../../../product/components/divider/index";
 
 const CustComponent = () => {
   const testimonials = [
