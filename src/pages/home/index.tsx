@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import NavbarComponent from "@/components/navbar";
 import FooterComponent from "@/components/footer";
@@ -13,9 +13,15 @@ import SpaceComponent from "./components/space";
 import ContComponent from "../about/components/contac";
 import UneComponent from "../about/components/unete";
 import CustComponent from "../membership/components/customers";
+import Modal from "@/components/modal";
 
 
 const HomePage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(true);
+  
+  const closeModal = () => setIsModalOpen(false);
+
+
   return (
     <div className="home-landing-page">
       <NavbarComponent />
@@ -33,6 +39,7 @@ const HomePage = () => {
         <UneComponent />
       </main>
       <FooterComponent />
+      <Modal isOpen={isModalOpen} onClose={closeModal} text="Hola, soy un modal!" />
     </div>
   );
 };
