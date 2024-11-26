@@ -1,7 +1,6 @@
 
 .container-blog {
   margin-top: 160px;
-}
 
 
 .filters {
@@ -118,3 +117,5 @@
 .actions .link:hover {
   text-decoration: underline;
 }
+}
+

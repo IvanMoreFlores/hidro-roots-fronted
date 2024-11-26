@@ -1,4 +1,4 @@
-.container-store {
+.product-container-store {
     margin-bottom: 80px;
     padding: 24px;
     gap: 8px;
@@ -8,7 +8,7 @@
     height: fixed(811px)px;
     gap: 8px;
     opacity: 1;
-}
+
 
 .grid-container-store {
     display: grid;
@@ -271,4 +271,5 @@
     .container-store {
         padding: 10px;
     }
+}
 }

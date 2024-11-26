@@ -25,15 +25,15 @@ const DropdownMenu = () => {
         onClick={() => setIsOpen(!isOpen)}
       >
         {selectedOption}
-       
-        <Image 
-            src="/img/menu-desplegable/menu.png" // Ruta ajustada
-            alt="Ordenar"
-            layout="responsive"
-            className={styles.icon}
-            width={20}
-            height={20}
-          />
+
+        <Image
+          src="/img/menu-desplegable/menu.png" // Ruta ajustada
+          alt="Ordenar"
+          layout="responsive"
+          className={styles.icon}
+          width={20}
+          height={20}
+        />
       </button>
       {isOpen && (
         <ul className={styles.dropdownMenu}>
@@ -62,10 +62,13 @@ const DropdownMenu = () => {
 // }
 // export default DropdownMenu;
 export default function menu() {
-    return (
-      <div className={styles.container}>
+  return (
+    <div className={styles.container}>
+      <p className={styles.title}>Resultados: (10) elementos</p>
+      <div className={styles.div_text}>
         <p className={styles.title}>Ordenar por</p>
         <DropdownMenu />
       </div>
-    );
-  }
+    </div>
+  );
+}

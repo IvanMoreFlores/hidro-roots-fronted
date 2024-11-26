@@ -13,7 +13,7 @@ const StoreComponent: React.FC = () => {
     });
   };
   return (
-    <div className="container-store">
+    <div className="product-container-store">
       <div className="grid-container-store">
         <div className="card-store">
           <Image

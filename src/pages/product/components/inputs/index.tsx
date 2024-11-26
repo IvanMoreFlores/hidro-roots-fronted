@@ -1,26 +1,23 @@
 import React from "react";
 import "./styles.css";
-import DividerComponent from "../divider";
 import ButtonContainer from "../buttons/ButtonContainer";
 import DropdownMenu from "../dropdown-menu";
+import DividerComponent from "@/components/divider";
 const ImpComponent = () => {
   return (
-    <div className="container-home-hero-vi">
-      <div className="div2">
-        <DividerComponent
-          width="750px"
-          height="1px"
-          color="rgba(229, 229, 229, 1)"
-        />
-      </div>
-      <ButtonContainer />
-
+    <div className="producto-container-hero">
       <DividerComponent
         width="750px"
         height="1px"
         color="rgba(229, 229, 229, 1)"
       />
+      <ButtonContainer />
       <DropdownMenu />
+      <DividerComponent
+        width="750px"
+        height="1px"
+        color="rgba(229, 229, 229, 1)"
+      />
     </div>
   );
 };
