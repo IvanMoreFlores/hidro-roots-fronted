@@ -3,6 +3,7 @@ import NavbarComponent from "@/components/navbar";
 import React from "react";
 import HeroComponentConact from "./components/hero";
 import "../../app/globals.css";
+import ConComponent from "./components/lista";
 
 const ConactPage = () => {
   return (
@@ -10,6 +11,7 @@ const ConactPage = () => {
       <NavbarComponent />
       <main className="content">
         <HeroComponentConact />
+        <ConComponent/>
       </main>
       <FooterComponent />
     </div>

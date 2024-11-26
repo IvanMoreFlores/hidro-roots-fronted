@@ -1,121 +1,124 @@
-
 .container-blog {
   margin-top: 160px;
 
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    align-items: center;
+    height: 46px;
+  }
 
-.filters {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 30px;
-  align-items: center;
-  height: 46px;
-}
+  .filter-item {
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 14px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 16px;
+    background: rgba(235, 254, 230, 1);
+    border-radius: 500px;
+    border: 1px solid rgba(159, 219, 142, 1);
+    transition: color 0.3s, border-bottom 0.3s;
+    color: rgba(36, 31, 28, 1);
+  }
 
-.filter-item {
-  cursor: pointer;
-  width: auto;
-  height: auto;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 14px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  padding: 16px;
-  background: rgba(235, 254, 230, 1);
-  border-radius: 500px;
-  border: 1px solid rgba(159, 219, 142, 1);
-  transition: color 0.3s, border-bottom 0.3s;
-  color: rgba(36, 31, 28, 1);
-}
-
-.filter-item.active {
-  width: auto;
-  height: auto;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 14px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  padding: 16px;
-  background: rgba(72, 186, 40, 1);
-  border-radius: 500px;
-  color: rgba(255, 255, 255, 1);
-}
+  .filter-item.active {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 14px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 16px;
+    background: rgba(72, 186, 40, 1);
+    border-radius: 500px;
+    color: rgba(255, 255, 255, 1);
+  }
 
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  justify-items: center;
-}
-
-@media (max-width: 768px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    width: 1, 072px;
+    height: 1, 269px;
+
+    gap: 24px;
+
+
+  }
+
+  /* @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+ */
+
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-color: #e5e7eb;
+  }
+
+
+  .content {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 10px;
+  }
+
+  .content p {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 20px;
+  }
+
+  .actions .link {
+    font-size: 14px;
+    color: #0d9488;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  .actions .link:hover {
+    text-decoration: underline;
   }
 }
-
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-.card {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s;
-  width: 100%;
-  max-width: 340px;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-
-.image-container {
-  position: relative;
-  width: 100%;
-  height: 180px;
-  background-color: #e5e7eb;
-}
-
-
-.content {
-  padding: 20px;
-  text-align: left;
-}
-
-.content h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #111827;
-  margin-bottom: 10px;
-}
-
-.content p {
-  font-size: 14px;
-  color: #6b7280;
-  margin-bottom: 20px;
-}
-
-.actions .link {
-  font-size: 14px;
-  color: #0d9488;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-.actions .link:hover {
-  text-decoration: underline;
-}
-}
-
