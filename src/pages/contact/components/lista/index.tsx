@@ -3,32 +3,27 @@ import "./styles.css";
 import Input from "../../../../components/input";
 import Button from "../../../../components/button";
 import Image from "next/image";
-const ConComponent = () => {
+
+const ContactForm = () => {
     return (
-        <div className="component-container-body-contact">
-            <div className="container-title-contact">
-                
-                <div className="image-header-contact">
+        <div className="contact-form-container">
+            <div className="contact-form-title-section">
                 <Image
-              src="/img/contacta/lista-one.png"
-              alt="Logo"
-              width={714}
-              height={185}
-            />
-
-                </div>
-
-                {/* Título principal */}
-                <h1 className="text-title-contact">Crezcamos juntos</h1>
-                <p className="text-description-contact">Completa el formulario</p>
+                    src="/img/contacta/lista-one.png"
+                    alt="Logo"
+                    width={714}
+                    height={185}
+                />
+                <h1 className="contact-form-title">Crezcamos juntos</h1>
+                <p className="contact-form-description">Completa el formulario</p>
             </div>
-            <div className="container-form-contact">
-                <div className="container-input-form">
-                    <Input label="Nombre" name="name" />
+            <div className="contact-form-body">
+                <div className="contact-form-inputs">
+                    <Input label="Nombre" name="name" type="name" />
                     <Input label="Correo" name="email" type="email" />
                     <Input label="Celular" name="phone" type="tel" />
                     <textarea
-                        className="textarea-field"
+                        className="contact-form-textarea"
                         name="message"
                         placeholder="Mensaje"
                         rows={4}
@@ -40,5 +35,4 @@ const ConComponent = () => {
     );
 };
 
-
-export default ConComponent;
+export default ContactForm;
