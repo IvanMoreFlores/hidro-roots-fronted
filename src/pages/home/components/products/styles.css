@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 48px;
+  padding-top: 5%;
+  background: linear-gradient(180deg, #EAF9DE 0%, rgba(250, 255, 246, 0) 100%);
 
   .contenedor-grid-padre {
     display: grid;
