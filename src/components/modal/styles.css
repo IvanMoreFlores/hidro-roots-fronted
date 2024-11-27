@@ -1,93 +1,110 @@
+/* Estilos del modal */
 .modal-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .modal-content {
-    background-color: #ebfee6;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 10%;
-    padding-right: 10%;
-    border-radius: 16px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra horizontalmente */
-    justify-content: center; /* Centra verticalmente */
-    gap: 20px;
-    position: relative; /* Necesario para que el hijo se ajuste correctamente */
-    overflow: visible; /* Permite que los hijos se salgan del borde */
-  }
-  
-  .modal-div-img {
-    background-color: #c3f4ca;
-    border: 15px solid white;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra horizontalmente */
-    justify-content: center; /* Centra verticalmente */
-    gap: 48px;
-    margin-top: -20%; /* Hace que el div sobresalga del contenedor padre */
-    width: fit-content; /* Ajusta el div al tamaño de su contenido */
-    padding: 0; /* Elimina cualquier padding extra */
-  }
-  
-  .modal-div-text {
-    width: 100%; /* Ajusta el texto para que ocupe todo el ancho del contenedor */
-    padding: 0; /* Sin padding extra */
-    margin: 0; /* Sin margen extra */
-    text-align: center;
-  }
-  
-  .modal-text-title {
-    font-size: 14px;
-    font-weight: 800;
-    line-height: 15.4px;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: #48ba28;
-  }
-  
-  .modal-text-subtitle {
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 26.4px;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: #241f1c;
-  }
-  
-  .modal-button {
-    width: 100% !important; /* Ocupa todo el ancho del contenedor */
-    padding: 12px; /* Ajusta el espaciado interno */
-    font-size: 16px; /* Tamaño de fuente más legible */
-    font-weight: bold; /* Hace el texto más destacado */
-    border: none; /* Elimina el borde predeterminado */
-    border-radius: 8px; /* Bordes redondeados */
-    background-color: #48ba28; /* Color de fondo */
-    color: white; /* Color del texto */
-    cursor: pointer; /* Cambia el cursor al estilo de clic */
-  }
-  
-  .modal-button:hover {
-    background-color: #3fa123; /* Color más oscuro al pasar el cursor */
-  }
-  
-  .modal-image {
-    display: block; /* Elimina cualquier espacio extra como inline-block */
-    margin: 0; /* Sin márgenes adicionales */
-    padding: 0; /* Sin paddings adicionales */
-    width: 100%; /* Hace que la imagen ocupe el ancho de su contenedor */
-    height: auto; /* Mantiene las proporciones de la imagen */
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative; /* Necesario para el botón de cierre */
+  background-color: #ebfee6;
+  padding: 20px 10%;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  overflow: visible;
+}
+
+/* Botón de cierre en la esquina superior derecha */
+.modal-close-button {
+  padding: 10px 15px 0px 0px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #241f1c;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  color: #48ba28;
+}
+
+.modal-div-img {
+  background-color: #c3f4ca;
+  border: 15px solid white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  margin-top: -20%;
+  width: fit-content;
+}
+
+.modal-div-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  width: 70%;
+}
+
+.modal-text-title {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 15.4px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #48ba28;
+}
+
+.modal-text-subtitle {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 26.4px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #241f1c;
+}
+
+.modal-button {
+  width: 100% !important;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #48ba28;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-button:hover {
+  background-color: #3fa123;
+}
+
+.modal-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+

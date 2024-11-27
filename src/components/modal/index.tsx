@@ -15,6 +15,11 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
   return (
     <div className="modal-container" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        {/* Botón de cierre en la esquina superior derecha */}
+        <button className="modal-close-button" onClick={onClose}>
+          &times;
+        </button>
+
         <div className="modal-div-img">
           <div className="modal-div-text">
             <p className="modal-text-title">Curso</p>
@@ -25,13 +30,14 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           <Image
             src="/img/modal/img-modal-one.png"
             alt="Logo"
-            layout="intrinsic" /* Se ajusta al tamaño real de la imagen */
-            className="modal-image" /* Clase para aplicar más estilos si es necesario */
-            width={248} /* Establece un tamaño base */
-            height={117} /* Establece un tamaño base */
+            layout="intrinsic"
+            className="modal-image"
+            width={248}
+            height={117}
             priority
           />
         </div>
+
         <Button className="modal-button" onClick={onClose}>
           Saber más
         </Button>
@@ -41,3 +47,4 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
 };
 
 export default Modal;
+
