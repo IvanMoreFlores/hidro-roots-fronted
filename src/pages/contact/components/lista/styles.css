@@ -6,23 +6,23 @@
   background: rgba(255, 255, 255, 1);
   border: 1px solid rgba(229, 229, 229, 1);
   width: 714px;
-  margin: 0 auto;
+  margin:  32 auto;
   border-radius: 16px;
   justify-content: center;
+
   .contact-form-title-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
   }
-  
+
   .contact-form-textarea,
   input[type="text"],
   input[type="email"],
   input[type="name"],
   input[type="tel"] {
     width: 95%;
-    /* Ocupa el 95% del ancho disponible */
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 1rem;
@@ -32,21 +32,21 @@
     font-family: system-ui, sans-serif;
     transition: border-color 0.3s ease;
   }
-  
-  /* Títulos */
+
+
   .contact-form-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
     text-align: center;
-    color: #48ba28;
+    color: rgba(36, 31, 28, 1);
     margin: 0;
     justify-content: left;
     width: 666px;
     height: 24px;
     display: flex;
   }
-  
+
   .contact-form-description {
     font-size: 16px;
     font-weight: 500;
@@ -58,8 +58,7 @@
     text-align: center;
     color: #333;
   }
-  
-  /* Estilos del formulario */
+
   .contact-form-body {
     display: flex;
     flex-direction: column;
@@ -69,13 +68,13 @@
     border-radius: 8px;
     width: 666px;
   }
-  
+
   .contact-form-inputs {
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
-  
+
   .contact-form-textarea {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -86,10 +85,9 @@
     font-family: system-ui, sans-serif;
     transition: border-color 0.3s ease;
   }
-  
+
   .contact-form-textarea:focus {
     border-color: #9ecaed;
     box-shadow: 0 0 8px rgba(158, 202, 237, 0.6);
   }
 }
-

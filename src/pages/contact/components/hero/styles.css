@@ -4,11 +4,15 @@
   justify-content: center;
   flex-direction: column;
   gap: 16px;
-  padding-top: 5%;
+  padding-top: 134px;
+
   background: linear-gradient(180deg, #eaf9de 0%, rgba(250, 255, 246, 0) 100%);
 
   .container-text-hero-us {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
 
   .text-title-hero-us {

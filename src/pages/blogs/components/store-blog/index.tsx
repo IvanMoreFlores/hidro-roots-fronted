@@ -19,6 +19,7 @@ const BloComponent = () => {
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
       type: "taller",
+      actionText: "Ir al curso",
     },
     {
       id: 3,
@@ -32,38 +33,40 @@ const BloComponent = () => {
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
       type: "blog",
+      inscribeText: "Inscribirme",
     },
     {
       id: 5,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
       type: "taller",
-      actionText: "Ir al curso",
     },
     {
       id: 6,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
       type: "curso",
+      actionText: "Ir al curso",
     },
     {
       id: 7,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
       type: "blog",
+      inscribeText: "Inscribirme",
     },
     {
       id: 8,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
       type: "taller",
+      actionText: "Ir al curso",
     },
     {
       id: 9,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
       type: "curso",
-      inscribeText: "Inscribirme",
     },
   ];
 
@@ -91,7 +94,6 @@ const BloComponent = () => {
         ))}
       </div>
 
-      {/* Grid de posts */}
       <div className="grid">
         {getFilteredPosts().map((post) => (
           <div key={post.id} className="card">
@@ -103,6 +105,7 @@ const BloComponent = () => {
                 objectFit="cover"
               />
             </div>
+            
             <div className="content">
               <h3>{post.title}</h3>
               <p>{post.description}</p>
