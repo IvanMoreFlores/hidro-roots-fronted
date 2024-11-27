@@ -43,17 +43,15 @@
     color: rgba(255, 255, 255, 1);
   }
 
-
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-    width: 1, 072px;
-    height: 1, 269px;
-    gap: 24px;
-
-
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 1072px;
+    height: 1269px;
+    margin: 0 auto;
   }
 
   .card {
@@ -64,8 +62,8 @@
     overflow: hidden;
     transition: transform 0.3s;
     width: 340px;
-    height:407px;
-    border-radius: 16px ;
+    height: 407px;
+    border-radius: 16px;
   }
 
   .card:hover {
@@ -84,7 +82,7 @@
   .content {
     width: 340px;
     height: 182px;
-    padding: 24px ;
+    padding: 24px;
     gap: 8px;
     display: flex;
     flex-direction: column;
