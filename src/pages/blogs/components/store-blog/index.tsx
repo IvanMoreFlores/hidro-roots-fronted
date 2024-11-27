@@ -1,7 +1,6 @@
-import "../../../../app/globals.css";
 import React, { useState } from "react";
 import Image from "next/image";
-
+import "../../../../app/globals.css";
 import "./styles.css";
 
 const BloComponent = () => {
@@ -13,6 +12,7 @@ const BloComponent = () => {
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
       type: "blog",
+      enviosText: "Blog",
     },
     {
       id: 2,
@@ -20,6 +20,7 @@ const BloComponent = () => {
       description: "Esto es un texto de referencia para un párrafo.",
       type: "taller",
       actionText: "Ir al curso",
+      enviosText: "Curso",
     },
     {
       id: 3,
@@ -27,6 +28,7 @@ const BloComponent = () => {
       description: "Esto es un texto de referencia para un párrafo.",
       type: "curso",
       inscribeText: "Inscribirme",
+      enviosText: "Taller",
     },
     {
       id: 4,
@@ -34,12 +36,14 @@ const BloComponent = () => {
       description: "Esto es un texto de referencia para un párrafo.",
       type: "blog",
       inscribeText: "Inscribirme",
+      enviosText: "Taller",
     },
     {
       id: 5,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
       type: "taller",
+      enviosText: "Blog",
     },
     {
       id: 6,
@@ -47,6 +51,7 @@ const BloComponent = () => {
       description: "Esto es un texto de referencia para un párrafo.",
       type: "curso",
       actionText: "Ir al curso",
+      enviosText: "Curso",
     },
     {
       id: 7,
@@ -54,6 +59,7 @@ const BloComponent = () => {
       description: "Esto es un texto de referencia para un párrafo.",
       type: "blog",
       inscribeText: "Inscribirme",
+      enviosText: "Taller",
     },
     {
       id: 8,
@@ -61,12 +67,14 @@ const BloComponent = () => {
       description: "Esto es un texto de referencia para un párrafo.",
       type: "taller",
       actionText: "Ir al curso",
+      enviosText: "Curso",
     },
     {
       id: 9,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
       type: "curso",
+      enviosText: "Blog",
     },
   ];
 
@@ -76,7 +84,7 @@ const BloComponent = () => {
 
   const getFilteredPosts = () => {
     if (activeFilter === "todos") return blogPosts;
-    return blogPosts.filter((post) => post.type === activeFilter);
+    return blogPosts.filter((post) => post.enviosText.toLowerCase() === activeFilter);
   };
 
   return (
@@ -98,6 +106,9 @@ const BloComponent = () => {
         {getFilteredPosts().map((post) => (
           <div key={post.id} className="card">
             <div className="image-container">
+              <div className="div-envios">
+                <p>{post.enviosText}</p>
+              </div>
               <Image
                 src="/img/blog/default.png"
                 alt={post.title}
@@ -105,7 +116,7 @@ const BloComponent = () => {
                 objectFit="cover"
               />
             </div>
-            
+
             <div className="content">
               <h3>{post.title}</h3>
               <p>{post.description}</p>

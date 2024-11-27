@@ -8,8 +8,8 @@ const StoreComponent: React.FC = () => {
 
   const handleDetailClick = (id: string) => {
     router.push({
-      pathname: "/hidro-store", // La ruta del componente destino
-      query: { id }, // Pasamos el ID como query
+      pathname: "/hidro-store",
+      query: { id }, 
     });
   };
   return (

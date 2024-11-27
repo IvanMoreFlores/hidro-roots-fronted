@@ -29,17 +29,7 @@
   }
 
   .filter-item.active {
-    width: auto;
-    height: auto;
-    font-size: 14px;
-    font-weight: 800;
-    line-height: 14px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    padding: 16px;
     background: rgba(72, 186, 40, 1);
-    border-radius: 500px;
     color: rgba(255, 255, 255, 1);
   }
 
@@ -50,8 +40,8 @@
     justify-content: center;
     align-items: center;
     width: 1072px;
-    height: 1269px;
     margin: 0 auto;
+    padding: 0;
   }
 
   .card {
@@ -63,25 +53,13 @@
     transition: transform 0.3s;
     width: 340px;
     height: 407px;
-    border-radius: 16px;
   }
 
   .card:hover {
     transform: translateY(-5px);
   }
 
-
-  .image-container {
-    position: relative;
-    width: 100%;
-    height: 180px;
-    background-color: #e5e7eb;
-  }
-
-
   .content {
-    width: 340px;
-    height: 182px;
     padding: 24px;
     gap: 8px;
     display: flex;
@@ -91,41 +69,60 @@
 
   .content h3 {
     color: rgba(36, 31, 28, 1);
-    width: 292px;
-    height: 78px;
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
-    letter-spacing: -0.01em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
   }
 
   .content p {
     color: rgba(88, 85, 83, 1);
-    width: 292px;
-    height: 48px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
   }
 
   .actions .link {
     color: rgba(72, 186, 40, 1);
     font-size: 14px;
     font-weight: 700;
-    line-height: 18.2px;
-    letter-spacing: -0.01em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
   }
 
   .actions .link:hover {
     text-decoration: underline;
+  }
+
+  .image-container {
+    position: relative;
+    width: 340px;
+    height: 185px;
+    background: linear-gradient(90deg, #26929F 21.18%, #186E80 78.68%);
+    overflow: hidden;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .div-envios {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 10px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(36, 31, 28, 1);
+    padding: 4px 8px 4px 8px;
+    border-radius: 4px ;
+ display: flex;
+ margin-left: 16px;
+ margin-top: 144px;
+    
   }
 }
