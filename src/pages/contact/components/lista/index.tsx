@@ -8,12 +8,18 @@ const ContactForm = () => {
     return (
         <div className="contact-form-container">
             <div className="contact-form-title-section">
-                <Image
-                    src="/img/contacta/lista-one.png"
-                    alt="Logo"
-                    width={714}
-                    height={185}
-                />
+                <div className="img-cont">
+                    <Image
+                        src="/img/contacta/G-con.png"
+                        alt="Logo"
+                        width={251}
+                        height={290.3}
+                        style={{
+                            position: "absolute",
+                            transform: "rotate(-13.2deg)",
+                        }}
+                    />
+                </div>
                 <h1 className="contact-form-title">Crezcamos juntos</h1>
                 <p className="contact-form-description">Completa el formulario</p>
             </div>

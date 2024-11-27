@@ -6,7 +6,7 @@
   background: rgba(255, 255, 255, 1);
   border: 1px solid rgba(229, 229, 229, 1);
   width: 714px;
-  margin:  32 auto;
+  margin: 32 auto;
   border-radius: 16px;
   justify-content: center;
 
@@ -17,6 +17,17 @@
     gap: 16px;
   }
 
+  .img-cont {
+    position: relative;
+    width: 714px;
+    height: 185px;
+    background: rgba(235, 254, 230, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px; 
+  }
   .contact-form-textarea,
   input[type="text"],
   input[type="email"],

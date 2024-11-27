@@ -3,15 +3,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 16px;
   padding-top: 5%;
   background: linear-gradient(180deg, #eaf9de 0%, rgba(250, 255, 246, 0) 100%);
 
-  .container-text-hero {
+  .container-text-blog {
     text-align: center;
+    
+    
   }
 
-  .text-title-hero {
+  .text-title-blog {
     font-size: 40px;
     font-weight: 800;
     line-height: 44px;
@@ -22,7 +23,7 @@
     margin-bottom: 20px;
   }
 
-  .text-description-hero {
+  .text-description-blog {
     font-size: 20px;
     font-weight: 500;
     line-height: 32px;
