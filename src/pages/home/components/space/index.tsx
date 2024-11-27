@@ -30,14 +30,14 @@ const SpaceComponent: React.FC = () => {
             height={347}
             src="/img/space/two.jpeg"
             alt="Image 2"
-          className="image"
+            className="image"
           />
           <Image
             width={355}
             height={347}
             src="/img/space/three.jpeg"
             alt="Image 3"
-          className="image"
+            className="image"
           />
         </div>
         <div className="div-image">
@@ -46,14 +46,14 @@ const SpaceComponent: React.FC = () => {
             height={402}
             src="/img/space/four.jpeg"
             alt="Image 4"
-          className="image"
+            className="image"
           />
           <Image
             width={357}
             height={290}
             src="/img/space/five.jpeg"
             alt="Image 5"
-          className="image"
+            className="image"
           />
         </div>
       </div>

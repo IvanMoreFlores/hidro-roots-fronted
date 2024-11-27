@@ -5,7 +5,6 @@
     padding-bottom: 48px;
     padding-top: 48px;
     gap: 24px;
-    /* background-image: url('/img/about/fondo.png');  */
     background-image: linear-gradient(rgba(234, 249, 222, 0.8), rgba(234, 249, 222, 0.8)), url(/img/about/fondo.png);
     background-size: cover; 
     background-position: center; 

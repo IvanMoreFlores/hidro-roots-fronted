@@ -1,7 +1,7 @@
 // src/presentation/components/Button.tsx
 
 import React from "react";
-import "./style.css"; // Asegúrate de crear un archivo CSS para los estilos
+import "./style.css"; 
 
 type ButtonVariant =
   | "text"
@@ -12,8 +12,8 @@ type ButtonVariant =
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
-  icon?: React.ReactNode; // Para permitir agregar iconos
-  loading?: boolean; // Para mostrar un estado de carga
+  icon?: React.ReactNode;
+  loading?: boolean; 
   width?: string;
 }
 
@@ -33,7 +33,7 @@ const Button: React.FC<ButtonProps> = ({
       {...props}
     >
       {loading ? (
-        <span className="loader" /> // Aquí puedes implementar un spinner si lo deseas
+        <span className="loader" /> 
       ) : (
         <>
           {children}

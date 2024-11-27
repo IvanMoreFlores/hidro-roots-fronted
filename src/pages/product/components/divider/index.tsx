@@ -2,11 +2,11 @@ import React from "react";
 import "./styles.css";
 
 interface DividerProps {
-  width?: string; // Ancho del divisor
-  height?: string; // Grosor del divisor
-  marginTop?: string; // Margen superior
-  marginBottom?: string; // Margen inferior
-  color?: string; // Color del divisor
+  width?: string; 
+  height?: string; 
+  marginTop?: string; 
+  marginBottom?: string; 
+  color?: string;
 }
 
 const DividerComponent: React.FC<DividerProps> = ({

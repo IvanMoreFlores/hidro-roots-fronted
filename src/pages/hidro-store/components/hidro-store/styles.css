@@ -46,14 +46,16 @@
     padding-top: 24px;
 
 }
-.container-productos-detail{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-justify-items: center;
-padding-right: 48px;
+
+.container-productos-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-right: 48px;
 }
+
 .discount-tag {
     display: inline-block;
     background: rgba(255, 45, 49, 1);
@@ -131,7 +133,7 @@ padding-right: 48px;
 }
 
 .detail-section {
-    padding: 0px ;
+    padding: 0px;
     border: none !important;
 }
 
@@ -173,10 +175,6 @@ padding-right: 48px;
     transform: rotate(180deg);
 }
 
-/* .description-content {
-    padding: 16px 0;
-    
-} */
 
 .stock-info {
     display: flex;

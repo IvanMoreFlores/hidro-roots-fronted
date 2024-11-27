@@ -2,7 +2,7 @@
 import styles from './ButtonContainer.module.css'
 import Image from 'next/image'
 
-// Componente Button1
+
 const Button1 = () => {
   return (
     <div className={styles.buttonContainer}>
@@ -22,7 +22,7 @@ const Button1 = () => {
   )
 }
 
-// Componente Button2
+
 const Button2 = () => {
   return (
     <div className={styles.buttonContainer}>
@@ -42,7 +42,7 @@ const Button2 = () => {
   )
 }
 
-// Componente Button3
+
 const Button3 = () => {
   return (
     <div className={styles.buttonContainer}>
@@ -62,7 +62,7 @@ const Button3 = () => {
   )
 }
 
-// Componente Button4
+
 const Button4 = () => {
   return (
     <div className={styles.buttonContainer}>
@@ -82,7 +82,7 @@ const Button4 = () => {
   )
 }
 
-// Contenedor principal que agrupa todos los botones
+
 const ButtonContainer = () => {
   return (
     <div className={styles.grid}>

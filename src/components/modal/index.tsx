@@ -15,7 +15,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
   return (
     <div className="modal-container" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        {/* Botón de cierre en la esquina superior derecha */}
+       
         <button className="modal-close-button" onClick={onClose}>
           &times;
         </button>

@@ -39,7 +39,7 @@
   gap: 16px;
 }
 
-.div-image{
+.div-image {
   flex-direction: column;
   display: flex;
   width: 355;

@@ -1,4 +1,4 @@
-/* src/presentation/components/style.css */
+
 
 .footer {
   display: grid;
@@ -17,11 +17,11 @@
 .footer-columns {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px; /* Espacio entre columnas */
+  gap: 20px; 
 }
 
 .footer-column {
-  text-align: left; /* Alineación del texto a la izquierda */
+  text-align: left; 
 }
 
 .footer-column {
@@ -47,20 +47,20 @@
 .footer-icons {
   display: flex;
   justify-content: center;
-  gap: 15px; /* Espacio entre iconos */
+  gap: 15px; 
 }
 
 .icon {
-  font-size: 24px; /* Tamaño de los iconos */
+  font-size: 24px;
   cursor: pointer;
-  color: #333; /* Cambia el color según sea necesario */
+  color: #333; 
 }
 
 .divider {
   flex-grow: 1;
   height: 1px;
-  background-color: #ccc; /* Color del divisor */
-  margin: 0 10px; /* Espacio entre el divisor y el texto */
+  background-color: #ccc; 
+  margin: 0 10px; 
   margin-bottom: 40px;
   margin-top: 40px;
 }

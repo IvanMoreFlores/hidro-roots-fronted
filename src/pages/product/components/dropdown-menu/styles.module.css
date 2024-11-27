@@ -1,7 +1,6 @@
 .container {
   display: flex;
   align-items: center;
-  /* justify-content: right; */
   flex-direction: row;
   gap: 32px;
 
@@ -10,7 +9,6 @@
 .div_text {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   align-items: center;
   gap: 24px;
 }
@@ -26,12 +24,6 @@
   color: rgba(88, 85, 83, 1);
 
 }
-
-/* .dropdown {
-  position: relative;
-  display: inline-block;
-  
-} */
 
 .dropdownButton {
   display: flex;

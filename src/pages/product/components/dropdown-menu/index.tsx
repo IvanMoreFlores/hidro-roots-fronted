@@ -27,7 +27,7 @@ const DropdownMenu = () => {
         {selectedOption}
 
         <Image
-          src="/img/menu-desplegable/menu.png" // Ruta ajustada
+          src="/img/menu-desplegable/menu.png" 
           alt="Ordenar"
           layout="responsive"
           className={styles.icon}
@@ -52,15 +52,7 @@ const DropdownMenu = () => {
   );
 };
 
-// const DropdownMenu;() {
-//   return (
-//     <div className={styles.container}>
-//       <h1 className={styles.title}>Menú Desplegable</h1>
-//       <DropdownMenu />
-//     </div>
-//   );
-// }
-// export default DropdownMenu;
+
 export default function menu() {
   return (
     <div className={styles.container}>
