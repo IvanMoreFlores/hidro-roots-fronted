@@ -112,8 +112,9 @@ const BloComponent = () => {
               <Image
                 src="/img/blog/default.png"
                 alt={post.title}
-                layout="fill"
-                objectFit="cover"
+                width={180}
+                height={185}
+                
               />
             </div>
 

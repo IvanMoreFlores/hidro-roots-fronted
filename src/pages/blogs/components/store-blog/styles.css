@@ -1,5 +1,6 @@
 .container-blog {
   margin-top: 160px;
+  margin-bottom: 2%;
 
   .filters {
     display: flex;
@@ -97,15 +98,14 @@
     height: 185px;
     background: linear-gradient(90deg, #26929F 21.18%, #186E80 78.68%);
     overflow: hidden;
-  }
-
-  .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
   }
 
   .div-envios {
+    left: 0;
     position: absolute;
     z-index: 10;
     top: 10px;
