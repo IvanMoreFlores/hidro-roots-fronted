@@ -98,13 +98,12 @@
     height: 185px;
     background: linear-gradient(90deg, #26929F 21.18%, #186E80 78.68%);
     overflow: hidden;
-    display: flex
-;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .div-envios {
+  .div-envios-blog {
     left: 0;
     position: absolute;
     z-index: 10;
@@ -119,10 +118,10 @@
     background: rgba(255, 255, 255, 1);
     color: rgba(36, 31, 28, 1);
     padding: 4px 8px 4px 8px;
-    border-radius: 4px ;
- display: flex;
- margin-left: 16px;
- margin-top: 144px;
-    
+    border-radius: 4px;
+    display: flex;
+    margin-left: 16px;
+    margin-top: 144px;
+
   }
 }

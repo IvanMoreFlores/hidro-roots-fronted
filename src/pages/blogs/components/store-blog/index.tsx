@@ -89,7 +89,7 @@ const BloComponent = () => {
 
   return (
     <div className="container-blog">
-      {/* Filtros */}
+      
       <div className="filters">
         {["todos", "blog", "curso", "taller"].map((filter) => (
           <div
@@ -106,7 +106,7 @@ const BloComponent = () => {
         {getFilteredPosts().map((post) => (
           <div key={post.id} className="card">
             <div className="image-container">
-              <div className="div-envios">
+              <div className="div-envios-blog">
                 <p>{post.enviosText}</p>
               </div>
               <Image
