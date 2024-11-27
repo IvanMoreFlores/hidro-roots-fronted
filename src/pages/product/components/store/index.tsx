@@ -86,7 +86,12 @@ const StoreComponent: React.FC = () => {
             </div>
             <div className="store-div">
               <button className="comprar-btn">Comprar</button>
-              <button className="detalle-btn">Detalle</button>
+              <button
+                className="detalle-btn"
+                onClick={() => handleDetailClick("12345")}
+              >
+                Detalle
+              </button>
             </div>
           </div>
         </div>
@@ -109,7 +114,12 @@ const StoreComponent: React.FC = () => {
             </div>
             <div className="store-div">
               <button className="comprar-btn">Comprar</button>
-              <button className="detalle-btn">Detalle</button>
+              <button
+                className="detalle-btn"
+                onClick={() => handleDetailClick("12345")}
+              >
+                Detalle
+              </button>
             </div>
           </div>
         </div>
@@ -132,7 +142,12 @@ const StoreComponent: React.FC = () => {
             </div>
             <div className="store-div">
               <button className="comprar-btn">Comprar</button>
-              <button className="detalle-btn">Detalle</button>
+              <button
+                className="detalle-btn"
+                onClick={() => handleDetailClick("12345")}
+              >
+                Detalle
+              </button>
             </div>
           </div>
         </div>
@@ -153,7 +168,12 @@ const StoreComponent: React.FC = () => {
             </div>
             <div className="store-div">
               <button className="comprar-btn">Comprar</button>
-              <button className="detalle-btn">Detalle</button>
+              <button
+                className="detalle-btn"
+                onClick={() => handleDetailClick("12345")}
+              >
+                Detalle
+              </button>
             </div>
           </div>
         </div>
@@ -175,7 +195,12 @@ const StoreComponent: React.FC = () => {
             </div>
             <div className="store-div">
               <button className="comprar-btn">Comprar</button>
-              <button className="detalle-btn">Detalle</button>
+              <button
+                className="detalle-btn"
+                onClick={() => handleDetailClick("12345")}
+              >
+                Detalle
+              </button>
             </div>
           </div>
         </div>
