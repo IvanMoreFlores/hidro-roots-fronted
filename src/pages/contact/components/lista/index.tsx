@@ -12,12 +12,12 @@ const ContactForm = () => {
                     <Image
                         src="/img/contacta/G-con.png"
                         alt="Logo"
-                        width={251}
-                        height={290.3}
-                        style={{
-                            position: "absolute",
-                            transform: "rotate(-13.2deg)",
-                        }}
+                        width={311}
+                        height={185}
+                        // style={{
+                        //     position: "absolute",
+                        //     transform: "rotate(-13.2deg)",
+                        // }}
                     />
                 </div>
                 <h1 className="contact-form-title">Crezcamos juntos</h1>
