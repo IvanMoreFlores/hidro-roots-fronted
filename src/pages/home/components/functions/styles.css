@@ -8,16 +8,16 @@
 
   /* Estilos para los contenedores de texto */
   .container-text {
-    display: flex !important;
-    justify-content: center !important;
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 0.5rem; /* Usando rem */
   }
 
   /* Contenedor de tarjetas en home */
   .container-card-home {
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
     align-items: center;
     gap: 2rem; /* Usando rem */
     flex-wrap: wrap; /* Agregado para mejor adaptabilidad en pantallas pequeñas */
