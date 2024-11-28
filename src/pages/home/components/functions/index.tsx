@@ -9,7 +9,7 @@ const FunctionsComponent = () => {
         <p className="text-title-functions">¿Cómo funciona?</p>
         <p className="text-description">Sigue estos 5 pasos con nosotros</p>
       </div>
-      <div className="container-card">
+      <div className="container-card-home">
         <Image
           src="/img/functions/one.png"
           alt="Logo"
@@ -25,7 +25,7 @@ const FunctionsComponent = () => {
           </p>
         </div>
       </div>
-      <div className="container-card">
+      <div className="container-card-home">
         <div className="container-text-item-left">
           <p className="text-title">Paso 2</p>
           <p className="text-subtitle">Prepara el espacio</p>
@@ -41,7 +41,7 @@ const FunctionsComponent = () => {
           height={340}
         />
       </div>
-      <div className="container-card">
+      <div className="container-card-home">
         <Image
           src="/img/functions/three.png"
           alt="Logo"
@@ -57,7 +57,7 @@ const FunctionsComponent = () => {
           </p>
         </div>
       </div>
-      <div className="container-card">
+      <div className="container-card-home">
         <div className="container-text-item-left">
           <p className="text-title">Paso 4</p>
           <p className="text-subtitle">Monitorea y nutre</p>
@@ -73,7 +73,7 @@ const FunctionsComponent = () => {
           height={340}
         />
       </div>
-      <div className="container-card">
+      <div className="container-card-home">
         <Image
           src="/img/functions/five.png"
           alt="Logo"
