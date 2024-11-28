@@ -7,6 +7,7 @@ import Image from "next/image";
 const ContactForm = () => {
     return (
         <div className="contact-form-container">
+            <div className="contact-form-body">
             <div className="contact-form-title-section">
                 <div className="img-cont">
                     <Image
@@ -14,16 +15,12 @@ const ContactForm = () => {
                         alt="Logo"
                         width={311}
                         height={185}
-                        // style={{
-                        //     position: "absolute",
-                        //     transform: "rotate(-13.2deg)",
-                        // }}
                     />
                 </div>
                 <h1 className="contact-form-title">Crezcamos juntos</h1>
                 <p className="contact-form-description">Completa el formulario</p>
             </div>
-            <div className="contact-form-body">
+            <div className="contact-form-footer">
                 <div className="contact-form-inputs">
                     <Input label="Nombre" name="name" type="name" />
                     <Input label="Correo" name="email" type="email" />
@@ -36,6 +33,7 @@ const ContactForm = () => {
                     />
                 </div>
                 <Button width="100%">Enviar</Button>
+            </div>
             </div>
         </div>
     );

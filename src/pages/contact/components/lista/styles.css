@@ -2,12 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(229, 229, 229, 1);
-  width: 714px;
   margin: 32px;
   border-radius: 16px;
   justify-content: center;
+
 
   .contact-form-title-section {
     display: flex;
@@ -76,7 +74,16 @@
     background-color: white;
     gap: 16px;
     border-radius: 8px;
-    width: 666px;
+    border: 1px solid rgba(229, 229, 229, 1);
+  }
+
+  .contact-form-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: white;
+    gap: 16px;
+    border-radius: 8px;
   }
 
   .contact-form-inputs {
