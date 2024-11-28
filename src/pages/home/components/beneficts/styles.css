@@ -7,7 +7,7 @@
 .container-beneficts {
   display: flex;
   flex-direction: row;
-  gap: 32;
+  gap: 32px;
 }
 
 .text-title {
@@ -32,7 +32,7 @@
 .card-item-beneficts {
   display: flex;
   flex-direction: row;
-  gap: 40;
+  gap: 40px;
 }
 .card-beneficts {
   width: 64px;
@@ -68,7 +68,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 40;
+  gap: 40px;
 }
 
 .container-text-item {
@@ -83,7 +83,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 24;
+  gap: 24px;
 }
 
 .container-item-card {
@@ -91,5 +91,5 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 24;
+  gap: 24px;
 }
