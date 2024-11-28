@@ -1,106 +1,89 @@
+/* Estilo general de la sección */
 .container-home-functions {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem; /* Usando rem para escalabilidad */
 
+  /* Estilos para los contenedores de texto */
   .container-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem; /* Usando rem */
+  }
+
+  /* Contenedor de tarjetas en home */
+  .container-card-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Usando rem */
+    flex-wrap: wrap; /* Agregado para mejor adaptabilidad en pantallas pequeñas */
+  }
+
+  /* Estilos para los textos principales */
+  .text-title-functions,
+  .text-subtitle {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #241f1c;
+    margin: 0;
+    text-align: center;
   }
 
   .text-title-functions {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: #241f1c;
-    margin: 0px;
+    font-size: 1.5rem; /* 24px en rem */
+    line-height: 1.25rem; /* 30px en rem */
   }
 
   .text-description {
-    font-size: 16px;
+    font-size: 1rem; /* 16px en rem */
     font-weight: 400;
-    line-height: 25.6px;
+    line-height: 1.6rem; /* 25.6px en rem */
     text-align: center;
     color: #241f1c;
-    margin: 0px;
+    margin: 0;
   }
 
-  .container-card-home {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-  }
-
-  .container-text-item-right {
-    width: 35%;
-    .text-title {
-      font-size: 16px;
-      font-weight: 800;
-      line-height: 16px;
-      text-align: left;
-      color: #48ba28;
-      margin: 0px;
-    }
-
-    .text-subtitle {
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 31.2px;
-      letter-spacing: -0.01em;
-      text-align: left;
-      color: #241f1c;
-      margin: 0px;
-    }
-
-    .text-description {
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 24px;
-      text-align: left;
-      color: #241f1c;
-      margin: 0px;
-    }
-  }
-
+  /* Estilos para contenedores de texto a la derecha e izquierda */
+  .container-text-item-right,
   .container-text-item-left {
     width: 35%;
-    .text-title {
-      font-size: 16px;
-      font-weight: 800;
-      line-height: 16px;
-      text-align: left;
-      color: #48ba28;
-      margin: 0px;
-      text-align: end;
-    }
+  }
 
-    .text-subtitle {
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 31.2px;
-      letter-spacing: -0.01em;
-      text-align: left;
-      color: #241f1c;
-      margin: 0px;
-      text-align: end;
-    }
+  .text-title {
+    font-size: 1rem; /* 16px en rem */
+    font-weight: 800;
+    line-height: 1rem; /* 16px en rem */
+    color: #48ba28;
+    margin: 0;
+  }
 
-    .text-description {
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 24px;
-      text-align: left;
-      color: #241f1c;
-      margin: 0px;
-      text-align: end;
-    }
+  /* El texto principal (subtitle) en el contenedor izquierdo o derecho */
+  .text-subtitle {
+    font-size: 1.5rem; /* 24px en rem */
+    font-weight: 700;
+    line-height: 2rem; /* 31.2px en rem */
+  }
+
+  /* Estilos de descripción (izquierda y derecha) */
+  .text-description {
+    font-size: 1rem; /* 16px en rem */
+    font-weight: 500;
+    line-height: 1.5rem; /* 24px en rem */
+    color: #241f1c;
+    margin: 0;
+  }
+
+  /* Estilos específicos para el contenedor de texto a la derecha */
+  .container-text-item-right {
+    text-align: left;
+  }
+
+  /* Estilos específicos para el contenedor de texto a la izquierda */
+  .container-text-item-left {
+    text-align: right;
   }
 }
