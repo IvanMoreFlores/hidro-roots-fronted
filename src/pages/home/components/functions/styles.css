@@ -31,11 +31,11 @@
     margin: 0px;
   }
 
-  .container-card-home-home {
+  .container-card-home {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 32px;
   }
 
