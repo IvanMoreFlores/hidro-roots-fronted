@@ -39,7 +39,8 @@
 }
 
 .icon-container-car,
-.icon-container-whatsapp {
+.icon-container-whatsapp,
+.icon-container-extra {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,4 +55,38 @@
 
 .icon-container-whatsapp {
   background-color: rgba(72, 186, 40, 1);
+}
+
+.icon-container-extra {
+  background-color: rgba(235, 254, 230, 1); /* Puedes cambiar el color de fondo si lo deseas */
+  display: none; /* Ocultar por defecto en la versión de escritorio */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar {
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 20px;
+  }
+
+  .navbar-left {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .navbar-options {
+    display: none;
+  }
+
+  .navbar-icons {
+    justify-content: flex-end;
+  }
+
+  .navbar-icons .icon-container-car {
+    margin-right: 10px;
+  }
+
+  .icon-container-extra {
+    display: flex; /* Mostrar en la versión móvil */
+  }
 }

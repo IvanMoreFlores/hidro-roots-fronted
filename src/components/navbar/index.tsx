@@ -12,9 +12,9 @@ const NavbarComponent: React.FC<NavbarProps> = ({
 }) => {
   return (
     <nav className="navbar" style={{ backgroundColor }}>
-      <Link href="/" className="navbar-logo">
+      <div className="navbar-left">
         <Image src="/img/logo.png" alt="Logo" width={132} height={26} />
-      </Link>
+      </div>
       <div className="navbar-options">
         <Link href="/about">Nosotros</Link>
         <Link href="/product">Productos</Link>
@@ -30,8 +30,14 @@ const NavbarComponent: React.FC<NavbarProps> = ({
           <Image
             src="/svg/whatsapp.svg"
             alt="WhatsApp"
-            width={24}
-            height={24}
+            width={24} height={24}
+          />
+        </div>
+        <div className="icon-container-extra">
+          <Image
+            src="/svg/extra-icon.svg"
+            alt="Extra Icon"
+            width={24} height={24}
           />
         </div>
       </div>
