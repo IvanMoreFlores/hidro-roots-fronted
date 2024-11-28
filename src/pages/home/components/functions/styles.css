@@ -8,8 +8,8 @@
 
   /* Estilos para los contenedores de texto */
   .container-text {
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
     align-items: center;
     gap: 0.5rem; /* Usando rem */
   }
