@@ -70,7 +70,6 @@
   .contact-form-body {
     display: flex;
     flex-direction: column;
-    padding: 24px;
     background-color: white;
     gap: 16px;
     border-radius: 8px;
