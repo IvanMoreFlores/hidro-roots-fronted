@@ -1,7 +1,9 @@
-import React from "react";
+// src/components/NavbarComponent.tsx
+import React, { useState } from "react";
 import "./style.css";
 import Image from "next/image";
 import Link from "next/link";
+import MobileMenu from "./mini-navbar/index";
 
 interface NavbarProps {
   backgroundColor?: string;
@@ -10,9 +12,15 @@ interface NavbarProps {
 const NavbarComponent: React.FC<NavbarProps> = ({
   backgroundColor = "#EAF9DE",
 }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <nav className="navbar" style={{ backgroundColor }}>
-        <Link href="/" className="navbar-logo">
+      <Link href="/" className="navbar-logo">
         <Image src="/img/logo.png" alt="Logo" width={132} height={26} />
       </Link>
       <div className="navbar-options">
@@ -27,20 +35,13 @@ const NavbarComponent: React.FC<NavbarProps> = ({
           <Image src="/svg/car.svg" alt="Carrito" width={24} height={24} />
         </div>
         <div className="icon-container-whatsapp">
-          <Image
-            src="/svg/whatsapp.svg"
-            alt="WhatsApp"
-            width={24} height={24}
-          />
+          <Image src="/svg/whatsapp.svg" alt="WhatsApp" width={24} height={24} />
         </div>
-        <div className="icon-container-extra">
-          <Image
-            src="/svg/Icon.svg"
-            alt="Extra Icon"
-            width={24} height={24}
-          />
+        <div className="icon-container-extra" onClick={toggleMobileMenu}>
+          <Image src="/svg/Icon.svg" alt="Extra Icon" width={24} height={24} />
         </div>
       </div>
+      <MobileMenu isOpen={isMobileMenuOpen} onClose={toggleMobileMenu} />
     </nav>
   );
 };
