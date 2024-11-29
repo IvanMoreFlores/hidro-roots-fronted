@@ -145,9 +145,6 @@
 
       height: 276px;
       border-radius: 8px;
-
-
-
     }
 
     .container-title {
@@ -160,11 +157,7 @@
       height: 208px;
       top: 6192px;
       left: 24px;
-      gap: 0px;
-      border-radius: 8px 0px 0px 0px;
-      opacity: 0px;
-
-
+      border-radius: 8px ;
     }
   }
 

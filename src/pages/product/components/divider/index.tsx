@@ -25,7 +25,7 @@ const DividerComponent: React.FC<DividerProps> = ({
           height,
           marginTop,
           marginBottom,
-          backgroundColor: color,
+          color,
         }}
       />
     </div>
