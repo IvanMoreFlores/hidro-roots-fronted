@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import "./style.css";
 import NavbarComponent from "@/components/navbar";
+import "../../app/globals.css";
 // import FooterComponent from "@/components/footer";
  import HeroComponent from "./components/hero";
 import ProductsComponent from "./components/products";
-// import DividerComponent from "./components/divider";
-// import BenefictsComponent from "./components/beneficts";
-// import FunctionsComponent from "./components/functions";
+ import DividerComponent from "./components/divider";
+ import BenefictsComponent from "./components/beneficts"; import FunctionsComponent from "./components/functions";
 // import Section01Component from "@/components/section";
 // import SpaceComponent from "./components/space";
 // import ContComponent from "../about/components/contac";
@@ -28,16 +28,19 @@ const HomePage = () => {
       <main className="content">
          <HeroComponent />
         <ProductsComponent />
-          {/*
+         
         <DividerComponent />
         <BenefictsComponent />
-        <DividerComponent />
-        <FunctionsComponent />
-        <Section01Component />
+         
+        <DividerComponent /> 
+       
+        <FunctionsComponent /> 
+        
+        {/* <Section01Component />
         <SpaceComponent />
         <CustComponent />
         <ContComponent />
-        <UneComponent /> */}
+        <UneComponent />  */}
       </main>
       {/* <FooterComponent /> */}
       <Modal isOpen={isModalOpen} onClose={closeModal} text="Hola, soy un modal!" />

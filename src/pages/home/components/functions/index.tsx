@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles.css";
 import Image from "next/image";
-
 const FunctionsComponent = () => {
   return (
     <div className="container-home-functions">

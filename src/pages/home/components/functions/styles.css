@@ -1,89 +1,106 @@
-/* Estilo general de la sección */
 .container-home-functions {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem; /* Usando rem para escalabilidad */
+  gap: 2.5rem;
+  padding: 2rem;
+  margin: 2rem 0;
+}
 
-  /* Estilos para los contenedores de texto */
-  .container-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem; /* Usando rem */
+
+.container-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.text-title-functions {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.text-description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  color: #241f1c;
+  margin: 0;
+}
+
+.container-card-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container-text-item-right,
+.container-text-item-left {
+  width: 40%;
+}
+
+.text-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #48ba28;
+  margin: 0;
+}
+
+.text-subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.text-description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #241f1c;
+}
+
+
+.container-text-item-right {
+  text-align: left;
+}
+
+.container-text-item-left {
+  text-align: right;
+}
+
+
+@media (max-width: 768px) {
+  .container-home-functions {
+    padding: 1rem;
   }
 
-  /* Contenedor de tarjetas en home */
-  .container-card-home {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center;
-    gap: 2rem; /* Usando rem */
-    flex-wrap: wrap; /* Agregado para mejor adaptabilidad en pantallas pequeñas */
-  }
-
-  /* Estilos para los textos principales */
-  .text-title-functions,
-  .text-subtitle {
-    font-weight: 700;
-    letter-spacing: -0.01em;
-    color: #241f1c;
-    margin: 0;
+  .container-text-item-right,
+  .container-text-item-left {
+    width: 100%;
     text-align: center;
   }
 
   .text-title-functions {
-    font-size: 1.5rem; /* 24px en rem */
-    line-height: 1.25rem; /* 30px en rem */
+    font-size: 1.5rem;
   }
 
   .text-description {
-    font-size: 1rem; /* 16px en rem */
-    font-weight: 400;
-    line-height: 1.6rem; /* 25.6px en rem */
-    text-align: center;
-    color: #241f1c;
-    margin: 0;
+    font-size: 1rem;
   }
 
-  /* Estilos para contenedores de texto a la derecha e izquierda */
-  .container-text-item-right,
-  .container-text-item-left {
-    width: 35%;
+  .container-card-home {
+    flex-direction: column;
+    gap: 1rem;
   }
 
-  .text-title {
-    font-size: 1rem; /* 16px en rem */
-    font-weight: 800;
-    line-height: 1rem; /* 16px en rem */
-    color: #48ba28;
-    margin: 0;
+  .container-card-home img {
+    width: 327px;
+    height: 252px;
   }
 
-  /* El texto principal (subtitle) en el contenedor izquierdo o derecho */
-  .text-subtitle {
-    font-size: 1.5rem; /* 24px en rem */
-    font-weight: 700;
-    line-height: 2rem; /* 31.2px en rem */
-  }
-
-  /* Estilos de descripción (izquierda y derecha) */
-  .text-description {
-    font-size: 1rem; /* 16px en rem */
-    font-weight: 500;
-    line-height: 1.5rem; /* 24px en rem */
-    color: #241f1c;
-    margin: 0;
-  }
-
-  /* Estilos específicos para el contenedor de texto a la derecha */
-  .container-text-item-right {
-    text-align: left;
-  }
-
-  /* Estilos específicos para el contenedor de texto a la izquierda */
-  .container-text-item-left {
-    text-align: right;
-  }
 }

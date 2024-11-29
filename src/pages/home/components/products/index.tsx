@@ -6,7 +6,6 @@ import categoryTwo from "../../../../../public/lottie/category2.json";
 import categoryThree from "../../../../../public/lottie/category3.json";
 import categoryFour from "../../../../../public/lottie/category4.json";
 import categoryFive from "../../../../../public/lottie/category5.json";
-
 const ProductsComponent = () => {
   return (
     <div className="container-home-products">
@@ -71,7 +70,9 @@ const ProductsComponent = () => {
           </div>
         </div>
       </div>
+     
     </div>
+    
   );
 };
 
