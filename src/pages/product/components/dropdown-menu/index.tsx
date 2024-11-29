@@ -29,7 +29,7 @@ const DropdownMenu = () => {
         <Image
           src="/img/menu-desplegable/menu.png" 
           alt="Ordenar"
-          layout="responsive"
+         
           className={styles.icon}
           width={20}
           height={20}

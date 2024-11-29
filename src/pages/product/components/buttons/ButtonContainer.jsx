@@ -13,7 +13,7 @@ const Button1 = () => {
             alt="Insumos"
             width={40}
             height={40}
-            layout="responsive"
+          
           />
         </div>
         <span className={styles.buttonText01}>Insumos</span>
@@ -33,7 +33,7 @@ const Button2 = () => {
             alt="Sistema de costeo"
             width={40}
             height={40}
-            layout="responsive"
+            
           />
         </div>
         <span className={styles.buttonText}>Sistema de costeo</span>
@@ -53,7 +53,7 @@ const Button3 = () => {
             alt="Planillas"
             width={40}
             height={40}
-            layout="responsive"
+            
           />
         </div>
         <span className={styles.buttonText}>Planillas</span>
@@ -73,7 +73,7 @@ const Button4 = () => {
             alt="Cursos y talleres"
             width={40}
             height={40}
-            layout="responsive"
+          
           />
         </div>
         <span className={styles.buttonText}>Cursos y talleres</span>

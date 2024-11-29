@@ -30,7 +30,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           <Image
             src="/img/modal/img-modal-one.png"
             alt="Logo"
-            layout="intrinsic"
+           
             className="modal-image"
             width={248}
             height={117}

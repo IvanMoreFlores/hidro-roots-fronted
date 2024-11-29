@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-page-custom-font */
-// src/app/layout.tsx
+
 import "./globals.css";
 
 export default function RootLayout({
