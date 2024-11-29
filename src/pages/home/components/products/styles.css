@@ -88,7 +88,7 @@
   gap: 12px;
 }
 
-/* Media Queries para dispositivos móviles */
+
 @media (max-width: 768px) {
   .contenedor-grid-padre {
     display: grid;
@@ -97,6 +97,7 @@
     gap: 4px;
     width: 327px;
     height: 496px;
+    margin-top: 40px;
   }
 
   .contenedor-total {
