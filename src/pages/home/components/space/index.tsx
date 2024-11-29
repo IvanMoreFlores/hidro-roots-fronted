@@ -39,7 +39,7 @@ const SpaceComponent: React.FC = () => {
           height={710}
           src="/img/space/one.jpeg"
           alt="Image 1"
-          className="image"
+          className="image1"
         />
         <div className="div-image">
           <Image

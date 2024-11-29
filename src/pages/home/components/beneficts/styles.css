@@ -98,7 +98,11 @@
     .container-beneficts {
       flex-direction: column;
       align-items: center;
+    }
 
+    .container-home-beneficts {
+      width: 90%;
+      margin: auto;
     }
 
     .container-item {

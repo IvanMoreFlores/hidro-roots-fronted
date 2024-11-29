@@ -34,11 +34,8 @@ const HomePage = () => {
         <FunctionsComponent />
         <Section01Component />
         <SpaceComponent />
-
         <CustComponent />
-
         <ContComponent />
-        
         <UneComponent />  
       </main>
        <FooterComponent /> 
