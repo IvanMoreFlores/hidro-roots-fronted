@@ -3,22 +3,22 @@ import React, { useState } from "react";
 import "./style.css";
 import NavbarComponent from "@/components/navbar";
 import "../../app/globals.css";
-// import FooterComponent from "@/components/footer";
- import HeroComponent from "./components/hero";
+import FooterComponent from "@/components/footer";
+import HeroComponent from "./components/hero";
 import ProductsComponent from "./components/products";
- import DividerComponent from "./components/divider";
- import BenefictsComponent from "./components/beneficts"; import FunctionsComponent from "./components/functions";
-// import Section01Component from "@/components/section";
-// import SpaceComponent from "./components/space";
-// import ContComponent from "../about/components/contac";
-// import UneComponent from "../about/components/unete";
-// import CustComponent from "../membership/components/customers";
+import DividerComponent from "./components/divider";
+import BenefictsComponent from "./components/beneficts"; import FunctionsComponent from "./components/functions";
+import Section01Component from "@/components/section";
+import SpaceComponent from "./components/space";
+import ContComponent from "../about/components/contac";
+import UneComponent from "../about/components/unete";
+import CustComponent from "../membership/components/customers";
 import Modal from "@/components/modal";
 
 
 const HomePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(true);
-  
+
   const closeModal = () => setIsModalOpen(false);
 
 
@@ -26,23 +26,22 @@ const HomePage = () => {
     <div className="home-landing-page">
       <NavbarComponent />
       <main className="content">
-         <HeroComponent />
+        <HeroComponent />
         <ProductsComponent />
-         
         <DividerComponent />
         <BenefictsComponent />
-         
-        <DividerComponent /> 
-       
-        <FunctionsComponent /> 
-        
-        {/* <Section01Component />
+        <DividerComponent />
+        <FunctionsComponent />
+        <Section01Component />
         <SpaceComponent />
+
         <CustComponent />
+
         <ContComponent />
-        <UneComponent />  */}
+        
+        <UneComponent />  
       </main>
-      {/* <FooterComponent /> */}
+       <FooterComponent /> 
       <Modal isOpen={isModalOpen} onClose={closeModal} text="Hola, soy un modal!" />
     </div>
   );

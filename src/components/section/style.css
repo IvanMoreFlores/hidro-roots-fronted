@@ -11,6 +11,7 @@
 .sec-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  /* Tres columnas en desktop */
   gap: 88px;
   text-align: center;
   color: white;
@@ -48,5 +49,57 @@
   line-height: 19.2px;
   text-align: center;
   color: rgba(255, 255, 255, 1);
-  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .section {
+    height: 752px;
+    width: 100%;
+  }
+
+  .sec-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cont-item {
+    gap: 12px;
+
+  }
+
+  .text-0 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22.4px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 100%;
+  }
+
+  .cont-value {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 56px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+  }
+
+  .cont-description {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 100%;
+  }
 }

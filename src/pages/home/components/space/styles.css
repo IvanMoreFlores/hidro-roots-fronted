@@ -3,50 +3,115 @@
   flex-direction: column;
   align-items: center;
   padding: 24px;
-}
 
-.container-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 48px;
-  text-align: center;
-}
+  .container-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+    text-align: center;
+  }
 
-.container-text-title {
-  margin-bottom: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .container-text-title {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.text-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
+  .text-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
 
-.text-description {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #555;
-}
+  .text-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+  }
 
-.grid-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 16px;
-}
+  .grid-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
 
-.div-image {
-  flex-direction: column;
-  display: flex;
-  width: 355;
-  gap: 16px;
-  border-radius: 8px;
-}
+  .div-image {
+    flex-direction: column;
+    display: flex;
+    gap: 16px;
+    border-radius: 8px;
+  }
 
-.image {
-  border-radius: 8px;
+  .image {
+    border-radius: 8px;
+  }
+
+  .image1 {
+    border-radius: 8px;
+  }
+
+
+  @media (max-width: 768px) {
+    .container-body {
+      padding: 16px;
+    }
+
+    .container-text-title {
+      gap: 16px;
+    }
+
+    .text-title {
+      color: rgba(36, 31, 28, 1);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: -0.01em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      width: 100%;
+    }
+
+    .text-description {
+      color: rgba(36, 31, 28, 1);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25.6px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      gap: 24px;
+      width: 100%;
+    }
+
+    .div-image {
+      display: grid;   
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    /* .image1 {
+      width: 327px;
+      height: 276px;
+      border-radius: 8px;
+
+
+    } */
+
+    .image {
+      width: 100%;
+      height: auto;
+   
+    }
+  }
+
 }

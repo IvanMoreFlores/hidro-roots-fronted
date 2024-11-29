@@ -151,11 +151,13 @@
     padding-right: 26px;
   }
 
-  .container-text-item-right,
+ 
   .container-text-item-left {
     order: 1;
     width: 100%;
     text-align: left;
+    gap: 8px;
+    flex-direction: column;
   }
 
   .container-text {

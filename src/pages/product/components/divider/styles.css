@@ -3,8 +3,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  .divider-home {
+    background: rgba(229, 229, 229, 1); 
+  }
+  @media (max-width: 768px) {
+    .divider-home{
+      width: 75%;
+    }
+    
+  }
 }
 
-.divider-home {
-  background: rgba(229, 229, 229, 1); 
-}

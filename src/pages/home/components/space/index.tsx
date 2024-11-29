@@ -4,6 +4,21 @@ import "./styles.css";
 import Image from "next/image";
 
 const SpaceComponent: React.FC = () => {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="container-body">
       <div className="container-title">
@@ -14,7 +29,9 @@ const SpaceComponent: React.FC = () => {
             necesidades
           </p>
         </div>
+        {!isMobile && (
         <Button width="60%">Contactar</Button>
+      )}
       </div>
       <div className="grid-container">
         <Image
@@ -57,6 +74,9 @@ const SpaceComponent: React.FC = () => {
           />
         </div>
       </div>
+      {isMobile && (
+        <Button width="60%">Contactar</Button>
+      )}
     </div>
   );
 };

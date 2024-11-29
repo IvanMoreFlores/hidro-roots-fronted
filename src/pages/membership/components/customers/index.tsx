@@ -103,7 +103,7 @@ const CustComponent = () => {
         <DividerComponent
           width="714px"
           height="1px"
-          color=" background:rgba(255, 255, 255, 1);"
+          color="rgba(255, 255, 255, 1);"
         />
       </div>
     </div>
