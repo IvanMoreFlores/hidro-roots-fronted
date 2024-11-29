@@ -12,9 +12,9 @@ const NavbarComponent: React.FC<NavbarProps> = ({
 }) => {
   return (
     <nav className="navbar" style={{ backgroundColor }}>
-      <div className="navbar-left">
+        <Link href="/" className="navbar-logo">
         <Image src="/img/logo.png" alt="Logo" width={132} height={26} />
-      </div>
+      </Link>
       <div className="navbar-options">
         <Link href="/about">Nosotros</Link>
         <Link href="/product">Productos</Link>
