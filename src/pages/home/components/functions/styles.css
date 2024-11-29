@@ -30,6 +30,7 @@
   text-align: center;
   color: #241f1c;
   margin: 0;
+  text-align: left;
 }
 
 .container-card-home {
@@ -77,6 +78,7 @@
 @media (max-width: 768px) {
   .container-home-functions {
     padding: 1rem;
+    margin: 0px;
   }
 
   .container-text-item-right,
@@ -102,5 +104,9 @@
     width: 327px;
     height: 252px;
   }
-
+.cont-fu{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
 }

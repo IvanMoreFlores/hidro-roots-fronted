@@ -1,12 +1,15 @@
 import React from "react";
 import "./styles.css";
 import Image from "next/image";
+
 const FunctionsComponent = () => {
   return (
     <div className="container-home-functions">
       <div className="container-text">
-        <p className="text-title-functions">¿Cómo funciona?</p>
-        <p className="text-description">Sigue estos 5 pasos con nosotros</p>
+        <div className="cont-fu">
+          <p className="text-title-functions">¿Cómo funciona?</p>
+          <p className="text-description">Sigue estos 5 pasos con nosotros</p>
+        </div>
       </div>
       <div className="container-card-home">
         <Image
