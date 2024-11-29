@@ -35,7 +35,7 @@ const NavbarComponent: React.FC<NavbarProps> = ({
         </div>
         <div className="icon-container-extra">
           <Image
-            src="/svg/extra-icon.svg"
+            src="/svg/Icon.svg"
             alt="Extra Icon"
             width={24} height={24}
           />

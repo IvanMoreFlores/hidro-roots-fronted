@@ -4,156 +4,178 @@
   align-items: center;
   padding-top: 5%;
   background: linear-gradient(180deg, #EAF9DE 0%, rgba(250, 255, 246, 0) 100%);
+}
 
+.contenedor-grid-padre {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 12px;
+}
+
+.title-card {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #100a55;
+}
+
+.sub-title-card {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: #100a55;
+}
+
+.contenedor-total {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 12px;
+}
+
+.contenedor-insumos,
+.contenedor-curso,
+.contenedor-cultivo,
+.contenedor-plantulas,
+.contenedor-membresia {
+  padding: 16px 24px 16px 24px;
+  gap: 16px;
+  border-radius: 24px 8px 8px 8px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.div_imagen {
+  display: flex;
+  justify-content: end;
+}
+
+.div_imagen img {
+  width: 80px;
+  height: 80px;
+}
+
+.contenedor-curso .div_imagen img {
+  width: 100px;
+  height: 100px;
+}
+
+.contenedor-plantulas .div_imagen img {
+  width: 100px;
+  height: 100px;
+}
+
+.contenedor-data-one {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 200px;
+  gap: 12px;
+}
+
+.contenedor-data-two {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px auto;
+  gap: 12px;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
   .contenedor-grid-padre {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
-    gap: 12px;
-
-    .title-card {
-      font-size: 16px;
-      font-weight: 800;
-      line-height: 20px;
-      letter-spacing: -0.01em;
-      text-align: left;
-      color: #100a55;
-    }
-
-    .sub-title-card {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 21px;
-      text-align: left;
-      color: #100a55;
-    }
-
-    .contenedor-total {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1fr;
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      gap: 12px;
-    }
-
-    .contenedor-insumos {
-      padding: 16px 24px 16px 24px;
-      gap: 16px;
-      border-radius: 24px 8px 8px 8px;
-      background: #ffffff;
-      border: 1px solid #e5e5e5;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1fr;
-
-      .div_imagen {
-        display: flex;
-        justify-content: end;
-
-        img {
-          width: 80px;
-          height: 80px;
-        }
-      }
-    }
-
-    .contenedor-curso {
-      padding: 16px 24px 16px 24px;
-      gap: 8px;
-      border-radius: 8px 8px 8px 24px;
-      background: #ffffff;
-      border: 1px solid #e5e5e5;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1fr;
-
-      .div_imagen {
-        display: flex;
-        justify-content: end;
-
-        img {
-          width: 100px;
-          height: 100px;
-        }
-      }
-    }
-
-    .contenedor-cultivo {
-      padding: 16px 24px 16px 24px;
-      gap: 8px;
-      border-radius: 8px 24px 8px 8px;
-      background: #ffffff;
-      border: 1px solid #e5e5e5;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1fr;
-
-      .div_imagen {
-        display: flex;
-        justify-content: end;
-
-        img {
-          width: 80px;
-          height: 80px;
-        }
-      }
-    }
-
-    .contenedor-plantulas {
-      padding: 16px 24px 16px 24px;
-      gap: 16px;
-      border-radius: 8px 8px 24px 8px;
-      background: #ffffff;
-      border: 1px solid #e5e5e5;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1fr;
-
-      .div_imagen {
-        display: flex;
-        justify-content: end;
-
-        img {
-          width: 100px;
-          height: 100px;
-        }
-      }
-    }
-
-    .contenedor-membresia {
-      padding: 16px 24px 16px 24px;
-      gap: 8px;
-      border-radius: 24px;
-      background: #ffffff;
-      border: 1px solid #e5e5e5;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1fr;
-
-      .div_imagen {
-        display: flex;
-        justify-content: end;
-
-        img {
-          width: 80px;
-          height: 80px;
-        }
-      }
-    }
-
-    .contenedor-data-one {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto 200px;
-      gap: 12px;
-    }
-
-    .contenedor-data-two {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 200px auto;
-      gap: 12px;
-    }
+    gap: 4px;
+    width: 327px;
+    height: 496px;
   }
+
+  .contenedor-total {
+    gap: 8px;
+    width: 327px;
+    height: 368px;
+    display: flex;
+  }
+
+  .contenedor-insumos,
+  .contenedor-curso,
+  .contenedor-cultivo,
+  .contenedor-plantulas,
+  .contenedor-membresia {
+    gap: 8px;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    background: #fff;
+    border: 1.5px solid #e5e5e5 !important;
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 16px;
+
+  }
+
+  .div_imagen {
+    width: 74px;
+    height: 74px;
+  }
+
+  .contenedor-curso .div_imagen {
+    position: absolute;
+    margin-top: 104px;
+    margin-left: 56px;
+  }
+
+  .contenedor-cultivo .div_imagen {
+    position: absolute;
+    margin-top: 104px;
+    margin-left: 56px;
+  }
+
+  .contenedor-insumos .div_imagen {
+    position: absolute;
+    margin-top: 64px;
+    margin-left: 56px;
+  }
+
+  .contenedor-plantulas .div_imagen {
+    position: absolute;
+    margin-top: 64px;
+    margin-left: 56px;
+  }
+
+  .contenedor-membresia .div_imagen {
+
+    margin-left: 56px;
+  }
+
+  .contenedor-insumos {
+    border-radius: 24px 8px 8px 8px;
+  }
+
+  .contenedor-curso {
+    border-radius: 8px 8px 8px 24px;
+  }
+
+  .contenedor-cultivo {
+    border-radius: 8px 24px 8px 8px;
+  }
+
+  .contenedor-plantulas {
+    border-radius: 8px 8px 24px 8px;
+  }
+
+  .contenedor-membresia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+
 }

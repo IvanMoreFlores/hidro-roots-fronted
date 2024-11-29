@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32;
+  gap: 32px;
   padding-top: 5%;
   background: #EAF9DE;
 }
@@ -35,4 +35,64 @@
   color: rgba(36, 31, 28, 1);
   margin-right: 20px;
   margin-bottom: 50px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .container-home-hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .container-text-hero {
+    width: 100%;
+    text-align: center;
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* Ajusta el margen superior para mover el texto hacia abajo */
+  }
+
+  .text-title-hero {
+    /* font-size: 32px;
+    line-height: 36px;
+    text-align: center; */
+    width: 327px;
+    height: 132px;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(36, 31, 28, 1);
+
+
+  }
+
+  .text-description-hero {
+    /* font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 20px; */
+    width: 327px;
+height: 64px;
+font-size: 20px;
+font-weight: 500;
+line-height: 32px;
+letter-spacing: -0.005em;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: rgba(36, 31, 28, 1);
+  }
+
+  .container-lottie-hero {
+    width: 100%;
+  }
 }
