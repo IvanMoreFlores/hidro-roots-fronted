@@ -65,7 +65,7 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255,255, 255, 1);
     justify-content: center;
     align-items: center;
     display: flex;
@@ -321,7 +321,7 @@
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255,255, 255, 1);
 }
 
 .add-to-cart-btn:hover {

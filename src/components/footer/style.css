@@ -1,7 +1,7 @@
 .footer {
   display: grid;
   grid-template-rows: auto auto auto;
-  background-color: rgba(255, 255, 255, 1);
+  background-color:rgba(255, 255, 255, 1);
   padding: 20px;
   margin-left: 20%;
   margin-right: 20%;
