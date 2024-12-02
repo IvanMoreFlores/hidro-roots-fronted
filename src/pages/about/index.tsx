@@ -16,8 +16,9 @@ const AboutPage = () => {
       <NavbarComponent />
       <main className="content">
         <AboutUsComponent />
-        <VisionComponent />
-        <DesignnComponent />
+         <VisionComponent />
+        
+        <DesignnComponent /> 
         <ContComponent />
         <UneComponent />
       </main>
