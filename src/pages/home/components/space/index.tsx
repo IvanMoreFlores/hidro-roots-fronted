@@ -2,6 +2,7 @@ import Button from "@/components/button";
 import React from "react";
 import "./styles.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const SpaceComponent: React.FC = () => {
   const [isMobile, setIsMobile] = React.useState(false);
@@ -30,7 +31,9 @@ const SpaceComponent: React.FC = () => {
           </p>
         </div>
         {!isMobile && (
-        <Button width="60%">Contactar</Button>
+        <Link href="/contact">
+        <Button width="350px">Contactar</Button>
+      </Link>
       )}
       </div>
       <div className="grid-container">
@@ -75,7 +78,9 @@ const SpaceComponent: React.FC = () => {
         </div>
       </div>
       {isMobile && (
-        <Button width="60%">Contactar</Button>
+        <Link href="/contact">
+          <Button width="60%">Contactar</Button>
+        </Link>
       )}
     </div>
   );

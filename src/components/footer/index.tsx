@@ -2,6 +2,7 @@
 import React from "react";
 import "./style.css";
 import Image from "next/image";
+import Link from "next/link"; // Importamos Link de Next.js
 
 const FooterComponent: React.FC = () => {
   return (
@@ -39,9 +40,15 @@ const FooterComponent: React.FC = () => {
         </div>
       </div>
       <div className="footer-row footer-icons">
-        <Image src="/svg/facebook.svg" alt="Logo" width={40} height={40} />
-        <Image src="/svg/instagram.svg" alt="Logo" width={40} height={40} />
-        <Image src="/svg/linkedin.svg" alt="Logo" width={40} height={40} />
+        <Link href="https://www.facebook.com/hidroroots.pe/" target="_blank" rel="noopener noreferrer">
+          <Image src="/svg/facebook.svg" alt="Facebook" width={24} height={24} />
+        </Link>
+        <Link href="https://www.instagram.com/hidroroots.pe/" target="_blank" rel="noopener noreferrer">
+          <Image src="/svg/instagram.svg" alt="Instagram" width={24} height={24} />
+        </Link>
+        <Link href="https://pe.linkedin.com/company/hidroroots" target="_blank" rel="noopener noreferrer">
+          <Image src="/svg/linkedin.svg" alt="LinkedIn" width={24} height={24} />
+        </Link>
       </div>
       <div className="footer-row footer-divider">
         <div className="divider" />

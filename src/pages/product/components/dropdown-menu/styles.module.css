@@ -14,6 +14,17 @@
 }
 
 .title {
+padding-right: 416px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(88, 85, 83, 1);
+
+}
+.title2 {
 
   font-size: 14px;
   font-weight: 400;
@@ -24,7 +35,6 @@
   color: rgba(88, 85, 83, 1);
 
 }
-
 .dropdownButton {
   display: flex;
   align-items: center;

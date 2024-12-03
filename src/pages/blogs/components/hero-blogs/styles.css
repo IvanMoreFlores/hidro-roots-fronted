@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 5%;
+  padding-top: 10%;
   background: linear-gradient(180deg, #eaf9de 0%, rgba(250, 255, 246, 0) 100%);
 
   .container-text-blog {

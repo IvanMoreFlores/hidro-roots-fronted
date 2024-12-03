@@ -4,6 +4,8 @@ import Lottie from "lottie-react";
 import Image from "next/image";
 import React from "react";
 import "./styles.css";
+import "../../../../app/globals.css";
+import Link from "next/link";
 
 const HeroComponent = () => {
   const [isMobile, setIsMobile] = React.useState(false);
@@ -29,7 +31,8 @@ const HeroComponent = () => {
           Sistemas hidropónicos diseñados para familias y empresas.
         </p>
         {!isMobile && (
-          <Button
+          <Link href="/product">
+          <Button width="192px"
             icon={
               <Image
                 src="/svg/icon/right.svg"
@@ -41,12 +44,14 @@ const HeroComponent = () => {
           >
             Ver productos
           </Button>
+          </Link>
         )}
       </div>
       <div className="container-lottie-hero">
         <Lottie animationData={heroLottie} loop={true} />
       </div>
       {isMobile && (
+         <Link href="/product">
         <Button
           icon={
             <Image
@@ -59,6 +64,7 @@ const HeroComponent = () => {
         >
           Ver productos
         </Button>
+        </Link>
       )}
     </div>
   );

@@ -10,7 +10,6 @@
 
 }
 
-
 .footer-row {
   margin: 10px 0;
 }
@@ -34,7 +33,7 @@
   font-weight: 700;
   line-height: 19.6px;
   text-align: left;
-  margin-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 
@@ -42,6 +41,7 @@
   font-size: 14px;
   font-weight: 500;
   text-align: left;
+  padding-bottom: 8px;
 }
 
 

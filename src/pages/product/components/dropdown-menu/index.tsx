@@ -58,7 +58,7 @@ export default function menu() {
     <div className={styles.container}>
       <p className={styles.title}>Resultados: (10) elementos</p>
       <div className={styles.div_text}>
-        <p className={styles.title}>Ordenar por</p>
+        <p className={styles.title2}>Ordenar por</p>
         <DropdownMenu />
       </div>
     </div>

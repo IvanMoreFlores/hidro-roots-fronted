@@ -3,6 +3,7 @@ import React from "react";
 import "./styles.css";
 import Image from "next/image";
 import DividerComponent from "../../../product/components/divider/index";
+import Link from "next/link"; // Importa Link de Next.js
 
 const SpacebComponent: React.FC = () => {
   return (
@@ -17,8 +18,10 @@ const SpacebComponent: React.FC = () => {
             hidropónico.
           </p>
         </div>
-
-        <Button width="350px">Contactar</Button>
+        {/* Envolver el botón con Link para redirección */}
+        <Link href="/contact">
+          <Button width="350px">Contactar</Button>
+        </Link>
       </div>
       <div className="grid-container-buildi-m">
         <Image

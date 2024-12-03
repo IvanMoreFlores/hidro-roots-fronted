@@ -13,6 +13,17 @@
   gap: 12px;
 }
 
+.contenedor-insumos:hover,
+.contenedor-curso:hover,
+.contenedor-cultivo:hover,
+.contenedor-plantulas:hover,
+.contenedor-membresia:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: rgba(100, 255, 100, 0.05);
+}
+
 .title-card {
   font-size: 16px;
   font-weight: 800;
@@ -39,6 +50,26 @@
   gap: 12px;
 }
 
+.contenedor-insumos {
+  border-radius: 24px 8px 8px 8px;
+}
+
+.contenedor-curso {
+  border-radius: 8px 8px 8px 24px;
+}
+
+.contenedor-cultivo {
+  border-radius: 8px 24px 8px 8px;
+}
+
+.contenedor-plantulas {
+  border-radius: 8px 8px 24px 8px;
+}
+
+.contenedor-membresia {
+  border-radius: 24px;
+}
+
 .contenedor-insumos,
 .contenedor-curso,
 .contenedor-cultivo,
@@ -46,7 +77,6 @@
 .contenedor-membresia {
   padding: 16px 24px 16px 24px;
   gap: 16px;
-  border-radius: 24px 8px 8px 8px;
   background: #ffffff;
   border: 1px solid #e5e5e5;
   display: grid;
@@ -59,19 +89,15 @@
   justify-content: end;
 }
 
-.div_imagen img {
-  width: 80px;
-  height: 80px;
-}
-
-.contenedor-curso .div_imagen img {
+.lottie {
   width: 100px;
   height: 100px;
 }
 
-.contenedor-plantulas .div_imagen img {
+.lottie2 {
   width: 100px;
   height: 100px;
+  margin-top: 48px;
 }
 
 .contenedor-data-one {

@@ -1,124 +1,84 @@
 .mobile-carousel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    padding: 16px;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    max-width: 400px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .image-container {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 16px;
-    position: relative;
-  }
-  
-  .image-slider {
-    display: flex;
-    width: 100%;
-    transition: transform 0.5s ease;
-  }
-  
-  .slide {
-    min-width: 100%; /* Cada imagen ocupa todo el ancho del contenedor */
-    position: relative;
-  }
-  
-  .image {
-    border-radius: 16px;
-    width: 100%;
-    height: auto;
-  }
-  
-  .p-desi {
-    position: absolute;
-    bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(255, 255, 255, 0.8);
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 1rem;
-    color: #333;
-    text-align: center;
-  }
-  
-  .carousel-indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 8px;
-  }
-  
-  .indicator {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #ddd;
-    margin: 0 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .indicator.active {
-    background-color: #4caf50;
-  }
-  .mobile-carousel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    padding: 16px;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff; /* Fondo blanco */
-    max-width: 400px; /* Ancho máximo del carrusel */
-    margin: auto; /* Centrando el carrusel */
-  }
-  
-  .image-container {
-    width: 100%; /* Para que ocupe todo el ancho posible */
-    overflow: hidden; /* Para ocultar cualquier desbordamiento */
-    border-radius: 16px; /* Bordes redondeados */
-  }
-  
-  .image {
-    border-radius: 16px;
-    width: 100%; /* Imagen ocupa todo el contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-  }
-  
-  .p-desi {
-    margin-top: 8px;
-    font-size: 1.2rem; /* Aumentar tamaño del texto */
-    color: #555;
-    text-align: center; /* Centrando el texto */
-  }
-  
-  .carousel-indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 8px;
-  }
-  
-  .indicator {
-    width: 12px; /* Incrementar tamaño de los círculos */
-    height: 12px;
-    border-radius: 50%;
-    background-color: #ddd; /* Color por defecto de los círculos */
-    margin: 0 4px; /* Espaciado entre círculos */
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .indicator.active {
-    background-color: #4caf50; /* Color del círculo activo */
-  }
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.carousel-viewport {
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-slider {
+  display: flex;
+  transition: transform 0.5s ease-out;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%; /* Cambiar a 100% para ocupar toda la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 90%;
+  height: 90%;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 75%;
+}
+
+.image {
+  transition: filter 0.5s ease, opacity 0.5s ease;
+}
+
+.image.active {
+  filter: brightness(0.7);
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: #4caf50;
+}

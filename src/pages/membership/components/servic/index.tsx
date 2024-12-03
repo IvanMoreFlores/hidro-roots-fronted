@@ -3,6 +3,7 @@ import React from "react";
 import "./styles.css";
 import Image from "next/image";
 import DividerComponent from "../../../product/components/divider/index";
+import Link from "next/link"; // Importa Link de Next.js
 
 const ServiComponent: React.FC = () => {
   return (
@@ -19,7 +20,10 @@ const ServiComponent: React.FC = () => {
             Innovación y soporte para el crecimiento empresarial
           </p>
         </div>
-        <Button width="350px">Contactar</Button>
+        {/* Envolver el botón con Link para redirección */}
+        <Link href="/contact">
+          <Button width="350px">Contactar</Button>
+        </Link>
       </div>
       <div className="grid-container-servi">
         <div className="div-image-servi">

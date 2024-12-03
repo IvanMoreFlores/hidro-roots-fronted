@@ -1,4 +1,3 @@
-// src/components/NavbarComponent.tsx
 import React, { useState } from "react";
 import "./style.css";
 import Image from "next/image";
@@ -13,6 +12,7 @@ const NavbarComponent: React.FC<NavbarProps> = ({
   backgroundColor = "#EAF9DE",
 }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  //const [hasProductInCart, setHasProductInCart] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -31,11 +31,16 @@ const NavbarComponent: React.FC<NavbarProps> = ({
         <Link href="/contact">Contacto</Link>
       </div>
       <div className="navbar-icons">
-        <div className="icon-container-car">
-          <Image src="/svg/car.svg" alt="Carrito" width={24} height={24} />
-        </div>
+{/* 
+        {hasProductInCart && (
+          <div className="icon-container-car">
+            <Image src="/svg/car.svg" alt="Carrito" width={24} height={24} />
+          </div>
+        )} */}
         <div className="icon-container-whatsapp">
-          <Image src="/svg/whatsapp.svg" alt="WhatsApp" width={24} height={24} />
+          <a href="https://wa.me/+51990391969" target="_blank" rel="noopener noreferrer">
+            <Image src="/svg/whatsapp.svg" alt="WhatsApp" width={24} height={24} />
+          </a>
         </div>
         <div className="icon-container-extra" onClick={toggleMobileMenu}>
           <Image src="/svg/Icon.svg" alt="Extra Icon" width={24} height={24} />

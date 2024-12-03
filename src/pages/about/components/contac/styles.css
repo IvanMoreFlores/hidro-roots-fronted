@@ -76,6 +76,7 @@
     padding: 24px;
     background-color: white;
     gap: 16px;
+    border-radius: 8px;
 }
 
 /* Responsive styles for mobile devices */

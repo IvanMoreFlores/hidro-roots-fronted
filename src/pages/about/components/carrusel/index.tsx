@@ -1,6 +1,4 @@
-// src/components/MobileCarousel.tsx
-
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 const images = [
@@ -11,66 +9,64 @@ const images = [
 
 const MobileCarousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [touchStartX, setTouchStartX] = useState(0);
-  const [touchEndX, setTouchEndX] = useState(0);
-  const slideRef = useRef<HTMLDivElement | null>(null);
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
 
   const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
     setTouchStartX(e.touches[0].clientX);
-    setTouchEndX(0);
   };
 
   const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
-    setTouchEndX(e.touches[0].clientX);
-  };
+    if (touchStartX === null) return;
 
-  const handleTouchEnd = () => {
-    if (touchEndX === 0) return;
-
+    const touchEndX = e.touches[0].clientX;
     const delta = touchStartX - touchEndX;
 
-    if (delta > 50) {
-      // Swipe left: next slide
-      setCurrentIndex((prevIndex) =>
-        prevIndex < images.length - 1 ? prevIndex + 1 : prevIndex
-      );
-    } else if (delta < -50) {
-      // Swipe right: previous slide
-      setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : prevIndex));
+    if (delta > 50 && currentIndex < images.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+      setTouchStartX(null);
+    } else if (delta < -50 && currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+      setTouchStartX(null);
     }
-
-    setTouchStartX(0);
-    setTouchEndX(0);
-  };
-
-  const goToSlide = (index: number) => {
-    setCurrentIndex(index);
   };
 
   return (
     <div className="mobile-carousel">
       <div
-        className="image-container"
-        ref={slideRef}
+        className="carousel-viewport"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
       >
-        <Image
-          width={308}
-          height={400}
-          src={images[currentIndex].src}
-          alt={images[currentIndex].alt}
-          className="image"
-        />
-        <p className="p-desi">{images[currentIndex].caption}</p>
+        <div
+          className="image-slider"
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`,
+          }}
+        >
+          {images.map((image, index) => (
+            <div key={index} className="slide">
+              <div className="card">
+                <div className="image-wrapper">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    layout="fill"
+                    objectFit="cover"
+                    className={`image ${currentIndex === index ? "active" : ""}`}
+                  />
+                </div>
+                <p className="caption">{image.caption}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
       <div className="carousel-indicators">
         {images.map((_, index) => (
           <span
             key={index}
             className={`indicator ${currentIndex === index ? "active" : ""}`}
-            onClick={() => goToSlide(index)}
+            onClick={() => setCurrentIndex(index)}
           />
         ))}
       </div>

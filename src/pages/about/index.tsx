@@ -17,7 +17,6 @@ const AboutPage = () => {
       <main className="content">
         <AboutUsComponent />
          <VisionComponent />
-        
         <DesignnComponent /> 
         <ContComponent />
         <UneComponent />

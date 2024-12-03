@@ -98,12 +98,13 @@ const CustComponent = () => {
               height={32}
               className="quotes-image"
             />
-          </button>
+            
+          </button >
         </div>
         <DividerComponent
           width="714px"
           height="1px"
-          color="rgba(255, 255, 255, 1);"
+          color="(255, 255, 255, 1);"
         />
       </div>
     </div>
