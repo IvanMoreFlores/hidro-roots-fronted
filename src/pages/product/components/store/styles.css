@@ -4,8 +4,6 @@
     gap: 8px;
     justify-content: center;
     display: flex;
-    width: fill(898px)px;
-    height: fixed(811px)px;
     gap: 8px;
     opacity: 1;
 
@@ -251,25 +249,45 @@
     color: rgba(88, 85, 83, 1);
 }
 
-@media (max-width: 1200px) {
-    .grid-container-store {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
 
-@media (max-width: 900px) {
+
+@media (max-width: 768px) {
     .grid-container-store {
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .grid-container-store {
-        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto;
     }
 
-    .container-store {
+    .card-store {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+
+    .card-content {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        flex-grow: 1; 
+    }
+
+    .store-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; 
+        margin-top: auto; 
+    }
+
+    .comprar-btn, .detalle-btn, .comprar-btn-agotado, .detalle-btn-agotado {
+        width: 100%;
         padding: 10px;
+        border-radius: 4px;
+        margin-top: 8px;
+        height: 37px;
+        margin-bottom: 0px; 
     }
 }
 }

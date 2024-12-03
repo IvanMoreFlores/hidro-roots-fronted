@@ -1,9 +1,9 @@
 .grid {
-    display: flex; /* Asegura que los botones estén en una sola fila */
-    gap: 1rem; /* Define el espacio entre los botones */
-    max-width: 100%; /* Asegura que no se sobrepase el ancho disponible */
-    margin: 0 auto; /* Centra el contenido */
-    padding: 20px; /* Espaciado interno */
+    display: flex; 
+    gap: 1rem; 
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 20px; 
     justify-content: center;
     align-items: center;
   }
@@ -92,8 +92,8 @@
   
   @media (max-width: 768px) {
     .grid {
-      flex-wrap: wrap; /* Permite que los botones pasen a la siguiente fila si no caben */
-      gap: 0.8rem; /* Ajusta el espacio entre botones */
+      flex-wrap: wrap; 
+      gap: 0.8rem; 
     }
   
     .button {
@@ -110,15 +110,4 @@
     }
   }
   
-  @media (max-width: 480px) {
-    .grid {
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-  
-    .button {
-      padding: 0.75rem;
-      min-height: 80px;
-    }
-  }
   

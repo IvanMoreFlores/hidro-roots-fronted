@@ -61,3 +61,20 @@
     gap: 8px;
     flex-direction: column;
 }
+@media (max-width: 768px) {
+    .contenedor-membresia-men {
+      width: 75%;
+      margin: auto;
+    }
+  
+    .div_imagen-men {
+      justify-content: center;
+      padding-left: 40px;
+      width: 64px; 
+      height: 64px; 
+    }
+ 
+    .sub-title-card-men{
+        width: 198px;
+    }
+  }
