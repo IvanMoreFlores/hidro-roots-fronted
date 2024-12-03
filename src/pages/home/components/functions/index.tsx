@@ -21,7 +21,7 @@ const FunctionsComponent = () => {
         <div className="container-text-item-right">
           <p className="text-title">Paso 1</p>
           <p className="text-subtitle">Elige tu sistema</p>
-          <p className="text-description">
+          <p className="text-description1">
             Primero selecciona el Hidro Roots que mejor se adapte a tus
             necesidades.
           </p>
@@ -53,7 +53,7 @@ const FunctionsComponent = () => {
         <div className="container-text-item-right">
           <p className="text-title">Paso 3</p>
           <p className="text-subtitle">Siembra tus plantas</p>
-          <p className="text-description">
+          <p className="text-description1">
             Coloca las plántulas en el sistema y sigue nuestras recomendaciones
             de cuidado.
           </p>
@@ -85,7 +85,7 @@ const FunctionsComponent = () => {
         <div className="container-text-item-right">
           <p className="text-title">Paso 5</p>
           <p className="text-subtitle">Cosecha y disfruta</p>
-          <p className="text-description">
+          <p className="text-description1">
             Recoge tus cultivos frescos y disfruta de alimentos saludables y
             sostenibles.
           </p>
