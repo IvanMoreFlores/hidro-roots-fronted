@@ -8,75 +8,15 @@ const BlogComponent = () => {
   const [activeFilter, setActiveFilter] = useState("todos");
 
   const blogPosts = [
-    {
-      id: 1,
-      title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
-      description: "Esto es un texto de referencia para un párrafo.",
-      type: "blog",
-      enviosText: "Blog",
-    },
-    {
-      id: 2,
-      title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
-      description: "Esto es un texto de referencia para un párrafo.",
-      type: "curso",
-      enviosText: "Curso",
-      actionText: "Ir al curso",
-    },
-    {
-      id: 3,
-      title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
-      description: "Esto es un texto de referencia para un párrafo.",
-      type: "taller",
-      enviosText: "Taller",
-      actionText: "Inscribirme",
-    },
-    {
-      id: 4,
-      title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
-      description: "Esto es un texto de referencia para un párrafo.",
-      type: "taller",
-      enviosText: "Taller",
-      actionText: "Inscribirme",
-    },
-    {
-      id: 5,
-      title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
-      description: "Esto es un texto de referencia para un párrafo.",
-      type: "blog",
-      enviosText: "Blog",
-    },
-    {
-      id: 6,
-      title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
-      description: "Esto es un texto de referencia para un párrafo.",
-      type: "curso",
-      enviosText: "Curso",
-      actionText: "Ir al curso",
-    },
-    {
-      id: 7,
-      title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
-      description: "Esto es un texto de referencia para un párrafo.",
-      type: "taller",
-      enviosText: "Taller",
-      actionText: "Inscribirme",
-    },
-    {
-      id: 8,
-      title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
-      description: "Esto es un texto de referencia para un párrafo.",
-      type: "curso",
-      enviosText: "Curso",
-      actionText: "Ir al curso",
-    },
-    {
-      id: 9,
-      title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
-      description: "Esto es un texto de referencia para un párrafo.",
-      type: "blog",
-      enviosText: "Blog",
-    },
+    { id: 1, title: "Cultivo en casa y la soberanía alimentaria en las comunidades.", description: "Esto es un texto de referencia para un párrafo.", type: "blog", enviosText: "Blog" },
+    { id: 2, title: "Cultivo en casa y la soberanía alimentaria en las comunidades.", description: "Esto es un texto de referencia para un párrafo.", type: "curso", enviosText: "Curso", actionText: "Ir al curso" },
+    { id: 3, title: "Cultivo en casa y la soberanía alimentaria en las comunidades.", description: "Esto es un texto de referencia para un párrafo.", type: "taller", enviosText: "Taller", actionText: "Inscribirme" },
+    { id: 4, title: "Cultivo en casa y la soberanía alimentaria en las comunidades.", description: "Esto es un texto de referencia para un párrafo.", type: "taller", enviosText: "Taller", actionText: "Inscribirme" },
+    { id: 5, title: "Cultivo en casa y la soberanía alimentaria en las comunidades.", description: "Esto es un texto de referencia para un párrafo.", type: "blog", enviosText: "Blog" },
+    { id: 6, title: "Cultivo en casa y la soberanía alimentaria en las comunidades.", description: "Esto es un texto de referencia para un párrafo.", type: "curso", enviosText: "Curso", actionText: "Ir al curso" },
+    { id: 7, title: "Cultivo en casa y la soberanía alimentaria en las comunidades.", description: "Esto es un texto de referencia para un párrafo.", type: "taller", enviosText: "Taller", actionText: "Inscribirme" },
+    { id: 8, title: "Cultivo en casa y la soberanía alimentaria en las comunidades.", description: "Esto es un texto de referencia para un párrafo.", type: "curso", enviosText: "Curso", actionText: "Ir al curso" },
+    { id: 9, title: "Cultivo en casa y la soberanía alimentaria en las comunidades.", description: "Esto es un texto de referencia para un párrafo.", type: "blog", enviosText: "Blog" },
   ];
 
   const handleResize = () => {
@@ -99,7 +39,7 @@ const BlogComponent = () => {
         const types = ["blog", "curso", "taller"];
         const uniquePosts = types
           .map((type) => blogPosts.find((post) => post.type.toLowerCase() === type))
-          .filter(Boolean); // Elimina los valores undefined en caso de que falte un tipo
+          .filter((post): post is typeof blogPosts[0] => !!post); // Asegura que no haya undefined
         return uniquePosts;
       }
       return blogPosts;
@@ -123,23 +63,23 @@ const BlogComponent = () => {
 
       <div className={`grid ${isMobile ? "mobile-grid" : ""}`}>
         {getFilteredPosts().map((post) => (
-          <div key={post.id} className="card">
+          <div key={post?.id} className="card">
             <div className="image-container">
-              <p className="div-envios-blog">{post.enviosText}</p>
+              <p className="div-envios-blog">{post?.enviosText}</p>
               <Image
                 src="/img/blog/default.png"
-                alt={post.title}
+                alt={post?.title || "Imagen de blog"}
                 width={180}
                 height={185}
               />
             </div>
             <div className="content">
-              <h3>{post.title}</h3>
-              <p>{post.description}</p>
+              <h3>{post?.title}</h3>
+              <p>{post?.description}</p>
               <div className="actions">
-                {post.actionText && (
-                  <a href={`/${post.type}/${post.id}`} className="link">
-                    {post.actionText}
+                {post?.actionText && (
+                  <a href={`/${post?.type}/${post?.id}`} className="link">
+                    {post?.actionText}
                   </a>
                 )}
               </div>
