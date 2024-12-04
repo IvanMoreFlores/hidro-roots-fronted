@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 16px;
-  padding-top: 10%;
+  padding-top: 10% ;
 
   background: linear-gradient(180deg, #eaf9de 0%, rgba(250, 255, 246, 0) 100%);
 
@@ -31,14 +31,15 @@
     line-height: 32px;
     letter-spacing: -0.005em;
   }
-}
+
 @media (max-width: 768px) {
   
   .conact-container-hero-us{
     width: 100%;
-    padding-top: 80px;
+    padding-top: 80px !important;
   }
   .container-text-hero-us{
     padding-bottom: 32px;
   }
+}
 }

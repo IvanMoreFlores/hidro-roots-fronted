@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-
+import "../../../../app/globals.css"
 const HeroComponentConact = () => {
   return (
     <div className="conact-container-hero-us">
