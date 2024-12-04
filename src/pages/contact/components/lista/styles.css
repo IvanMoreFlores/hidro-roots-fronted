@@ -6,7 +6,6 @@
   border-radius: 16px;
   justify-content: center;
 
-
   .contact-form-title-section {
     display: flex;
     flex-direction: column;
@@ -16,15 +15,15 @@
 
   .img-cont {
     position: relative;
-    width: 714px;
-    height: 185px;
+    width: 100%;
     background: rgba(235, 254, 230, 1);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-radius: 8px; 
+    border-radius: 8px;
   }
+
   .contact-form-textarea,
   input[type="text"],
   input[type="email"],
@@ -41,18 +40,16 @@
     transition: border-color 0.3s ease;
   }
 
-
   .contact-form-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
     text-align: center;
     color: rgba(36, 31, 28, 1);
-    margin: 0;
     justify-content: left;
-    width: 666px;
-    height: 24px;
+    width: 100%;
     display: flex;
+    margin-left: 44px;
   }
 
   .contact-form-description {
@@ -64,7 +61,8 @@
     display: flex;
     line-height: 25.6px;
     text-align: center;
-    color: #333;
+    color: rgba(88, 85, 83, 1);
+    margin-left: 24px;
   }
 
   .contact-form-body {
@@ -105,5 +103,48 @@
   .contact-form-textarea:focus {
     border-color: #9ecaed;
     box-shadow: 0 0 8px rgba(158, 202, 237, 0.6);
+  }
+
+
+  @media (max-width: 768px) {
+
+
+    .img-cont {
+      width: 100%;
+      height: auto;
+    }
+
+    .contact-form-title {
+      width: 100%;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 26px;
+      letter-spacing: -0.01em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+    }
+
+    .contact-form-description {
+      width: 100%;
+      padding-left: 24px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+    }
+
+    .contact-form-textarea,
+    input[type="text"],
+    input[type="email"],
+    input[type="name"],
+    input[type="tel"] {
+      width: 90%;
+      margin: auto;
+    }
   }
 }
