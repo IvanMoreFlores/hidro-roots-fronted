@@ -8,7 +8,7 @@
 
   background: linear-gradient(180deg, #eaf9de 0%, rgba(250, 255, 246, 0) 100%);
 
-  .container-text-hero-us {
+  .container-text-hero-ush {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -36,10 +36,11 @@
   
   .conact-container-hero-us{
     width: 100%;
-    padding-top: 80px !important;
+   
   }
-  .container-text-hero-us{
+  .container-text-hero-ush{
     padding-bottom: 32px;
+    margin-top: 50px !important;
   }
 }
 }

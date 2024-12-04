@@ -4,7 +4,7 @@ import "../../../../app/globals.css"
 const HeroComponentConact = () => {
   return (
     <div className="conact-container-hero-us">
-      <div className="container-text-hero-us">
+      <div className="container-text-hero-ush">
         <p className="text-title-hero-us">Contacto</p>
         <p className="text-description-hero-us">A un mensaje de distancia</p>
       </div>
