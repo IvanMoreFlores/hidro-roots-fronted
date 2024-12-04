@@ -14,13 +14,12 @@ const BlogComponent = () => {
       description: "Esto es un texto de referencia para un párrafo.",
       type: "blog",
       enviosText: "Blog",
-
     },
     {
       id: 2,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
-      type: "Curso",
+      type: "curso",
       enviosText: "Curso",
       actionText: "Ir al curso",
     },
@@ -46,7 +45,6 @@ const BlogComponent = () => {
       description: "Esto es un texto de referencia para un párrafo.",
       type: "blog",
       enviosText: "Blog",
-
     },
     {
       id: 6,
@@ -78,7 +76,6 @@ const BlogComponent = () => {
       description: "Esto es un texto de referencia para un párrafo.",
       type: "blog",
       enviosText: "Blog",
-
     },
   ];
 
@@ -99,10 +96,10 @@ const BlogComponent = () => {
   const getFilteredPosts = () => {
     if (activeFilter === "todos") {
       if (isMobile) {
-        const uniquePosts = blogPosts.reduce((acc, post) => {
-          if (!acc.find((p) => p.type === post.type)) acc.push(post);
-          return acc;
-        }, [] as typeof blogPosts);
+        const types = ["blog", "curso", "taller"];
+        const uniquePosts = types
+          .map((type) => blogPosts.find((post) => post.type.toLowerCase() === type))
+          .filter(Boolean); // Elimina los valores undefined en caso de que falte un tipo
         return uniquePosts;
       }
       return blogPosts;
