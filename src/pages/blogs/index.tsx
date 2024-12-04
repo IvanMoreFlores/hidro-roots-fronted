@@ -14,9 +14,9 @@ const AboutPage = () => {
       <NavbarComponent />
       <main className="content">
         <Us1Component />
-        <BloComponent />
+         <BloComponent />
         <ContComponent />
-        <UneComponent />
+        <UneComponent /> 
       </main>
       <FooterComponent />
     </div>

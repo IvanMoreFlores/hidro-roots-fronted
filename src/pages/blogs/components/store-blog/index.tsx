@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import "../../../../app/globals.css";
 import "./styles.css";
 
-const BloComponent = () => {
+const BlogComponent = () => {
+  const [isMobile, setIsMobile] = useState(false);
   const [activeFilter, setActiveFilter] = useState("todos");
 
   const blogPosts = [
@@ -13,83 +14,104 @@ const BloComponent = () => {
       description: "Esto es un texto de referencia para un párrafo.",
       type: "blog",
       enviosText: "Blog",
+
     },
     {
       id: 2,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
-      type: "taller",
-      actionText: "Ir al curso",
+      type: "Curso",
       enviosText: "Curso",
+      actionText: "Ir al curso",
     },
     {
       id: 3,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
-      type: "curso",
-      inscribeText: "Inscribirme",
+      type: "taller",
       enviosText: "Taller",
+      actionText: "Inscribirme",
     },
     {
       id: 4,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
-      type: "blog",
-      inscribeText: "Inscribirme",
+      type: "taller",
       enviosText: "Taller",
+      actionText: "Inscribirme",
     },
     {
       id: 5,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
-      type: "taller",
+      type: "blog",
       enviosText: "Blog",
+
     },
     {
       id: 6,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
       type: "curso",
-      actionText: "Ir al curso",
       enviosText: "Curso",
+      actionText: "Ir al curso",
     },
     {
       id: 7,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
-      type: "blog",
-      inscribeText: "Inscribirme",
+      type: "taller",
       enviosText: "Taller",
+      actionText: "Inscribirme",
     },
     {
       id: 8,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
-      type: "taller",
-      actionText: "Ir al curso",
+      type: "curso",
       enviosText: "Curso",
+      actionText: "Ir al curso",
     },
     {
       id: 9,
       title: "Cultivo en casa y la soberanía alimentaria en las comunidades.",
       description: "Esto es un texto de referencia para un párrafo.",
-      type: "curso",
+      type: "blog",
       enviosText: "Blog",
+
     },
   ];
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+  };
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const filterPosts = (filter: string) => {
     setActiveFilter(filter);
   };
 
   const getFilteredPosts = () => {
-    if (activeFilter === "todos") return blogPosts;
+    if (activeFilter === "todos") {
+      if (isMobile) {
+        const uniquePosts = blogPosts.reduce((acc, post) => {
+          if (!acc.find((p) => p.type === post.type)) acc.push(post);
+          return acc;
+        }, [] as typeof blogPosts);
+        return uniquePosts;
+      }
+      return blogPosts;
+    }
     return blogPosts.filter((post) => post.enviosText.toLowerCase() === activeFilter);
   };
 
   return (
     <div className="container-blog">
-      
       <div className="filters">
         {["todos", "blog", "curso", "taller"].map((filter) => (
           <div
@@ -102,34 +124,25 @@ const BloComponent = () => {
         ))}
       </div>
 
-      <div className="grid">
+      <div className={`grid ${isMobile ? "mobile-grid" : ""}`}>
         {getFilteredPosts().map((post) => (
           <div key={post.id} className="card">
             <div className="image-container">
-              <div className="div-envios-blog">
-                <p>{post.enviosText}</p>
-              </div>
+              <p className="div-envios-blog">{post.enviosText}</p>
               <Image
                 src="/img/blog/default.png"
                 alt={post.title}
                 width={180}
                 height={185}
-                
               />
             </div>
-
             <div className="content">
               <h3>{post.title}</h3>
               <p>{post.description}</p>
               <div className="actions">
                 {post.actionText && (
-                  <a href="/ir-al-curso" className="link">
+                  <a href={`/${post.type}/${post.id}`} className="link">
                     {post.actionText}
-                  </a>
-                )}
-                {post.inscribeText && (
-                  <a href="/inscribir" className="link">
-                    {post.inscribeText}
                   </a>
                 )}
               </div>
@@ -141,4 +154,4 @@ const BloComponent = () => {
   );
 };
 
-export default BloComponent;
+export default BlogComponent;
