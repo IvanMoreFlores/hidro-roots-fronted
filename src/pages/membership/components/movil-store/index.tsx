@@ -8,7 +8,7 @@ const HComponent = () => {
   const dropdownItems = [
     {
       key: "cantidad",
-      label: "Cantidad: 40 plántulas",
+      label: "Cantidad: 40 unidades",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
@@ -29,6 +29,7 @@ const HComponent = () => {
   ];
 
   const [openDropdowns, setOpenDropdowns] = useState<(string | null)[]>([null, null, null]);
+  const [activeFilter, setActiveFilter] = useState<string>("plántulas");
 
   const toggleDropdown = (cardIndex: number, key: string) => {
     setOpenDropdowns((prevState) =>
@@ -38,29 +39,31 @@ const HComponent = () => {
     );
   };
 
-  const renderCard = (cardIndex: number, cardType: string) => (
+  const cards = [
+    { id: 1, type: "plántulas", title: "Plántulas", content: "Detalles sobre las plántulas" },
+    { id: 2, type: "cosecha", title: "Cosecha", content: "Detalles sobre la cosecha" },
+    { id: 3, type: "gestión", title: "Gestión", content: "Información sobre la gestión" },
+  ];
+
+  const filteredCards = activeFilter === "plántulas" ? cards.filter((card) => card.type === activeFilter) : cards.filter((card) => card.type === activeFilter);
+
+  const renderCard = (cardIndex: number, cardType: string, cardTitle: string, cardContent: string) => (
     <div className="pricing-card-store-men" key={`card-${cardIndex}`}>
       <div className="card-image-store-men">
         <Image
           src="/img/men-store/1.png"
-          alt="Plántulas hidropónicas"
+          alt="Hidropónicos"
           width={340}
           height={150}
         />
       </div>
       <div className="princing-padre">
         <div className="card-type-store-men">
-          <p className="plantulas-s">{cardType}</p>
+          <p className="plantulas-s">{cardTitle}</p>
         </div>
-        <div className="card-title-store-men">
-          {cardType === "Plántulas" ? "Plántulas sembradas en bandejas" : cardType === "Cosecha" ? "Cosecha de cultivos hidropónicos" : "Gestión de recursos"}
-        </div>
+        <div className="card-title-store-men">{cardContent}</div>
         <div className="card-description-store-men">
-          {cardType === "Plántulas" 
-            ? "Plántulas listas para trasplante en 3-4 semanas optimizando tu producción." 
-            : cardType === "Cosecha" 
-            ? "Cosecha de cultivos de alta calidad para tu negocio." 
-            : "Gestión efectiva de recursos para cultivos sostenibles."}
+          Información optimizada para maximizar tu producción.
         </div>
         <div className="price-store-men">
           <p className="p-price-sore">S/ 600.00</p>
@@ -90,7 +93,7 @@ const HComponent = () => {
           <div className="feature-item-store-men1">
             <Image
               src="/img/men-store/2i.png"
-              alt="Plántulas hidropónicas"
+              alt="Hidropónicos"
               width={16}
               height={16}
             />
@@ -99,7 +102,7 @@ const HComponent = () => {
           <div className="feature-item-store-men1">
             <Image
               src="/img/men-store/2i.png"
-              alt="Plántulas hidropónicas"
+              alt="Hidropónicos"
               width={16}
               height={16}
             />
@@ -108,7 +111,7 @@ const HComponent = () => {
           <div className="feature-item-store-men1">
             <Image
               src="/img/men-store/2i.png"
-              alt="Plántulas hidropónicas"
+              alt="Hidropónicos"
               width={16}
               height={16}
             />
@@ -117,11 +120,11 @@ const HComponent = () => {
           <div className="feature-item-store-men1">
             <Image
               src="/img/men-store/2i.png"
-              alt="Plántulas hidropónicas"
+              alt="Hidropónicos"
               width={16}
               height={16}
             />
-            Recibe HidroBeneficios (Comisiones, Promociones y acceso gratuito a clases hidropónica, cultivo y desarrollo)
+            Recibe HidroBeneficios (Comisiones, Promociones y acceso gratuito a clases de cultivo y desarrollo)
           </div>
         </div>
       </div>
@@ -130,11 +133,25 @@ const HComponent = () => {
 
   return (
     <div className="container-home-hero-store-men">
-      {["Plántulas", "Cosecha", "Gestión"].map((type, index) => (
-        <div className="pricing-container-store-men" key={index}>
-          {renderCard(index, type)}
-        </div>
-      ))}
+      {/* Filtros */}
+      <div className="filters-store-men">
+        {["plántulas", "cosecha", "gestión"].map((filter) => (
+          <button
+            key={filter}
+            className={`filter-button-store-men ${activeFilter === filter ? "active" : ""}`}
+            onClick={() => setActiveFilter(filter)}
+          >
+            {filter.charAt(0).toUpperCase() + filter.slice(1)}
+          </button>
+        ))}
+      </div>
+
+      {/* Tarjetas filtradas */}
+      <div className="pricing-container-store-men">
+        {filteredCards.map((card, index) =>
+          renderCard(index, card.type, card.title, card.content)
+        )}
+      </div>
     </div>
   );
 };

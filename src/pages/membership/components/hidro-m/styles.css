@@ -6,18 +6,16 @@
   padding-top: 10%;
   padding-bottom: 80px;
   gap: 16px;
-  background: linear-gradient(
-    360deg,
-    rgba(246, 255, 249, 0) 5%,
-    #bcebf1 82.03%
-  );
-  width: auto;
+  background: linear-gradient(360deg,
+      rgba(246, 255, 249, 0) 5%,
+      #bcebf1 82.03%);
+
 }
 
 .container-text-hero-h {
   text-align: center;
-  width: 898px;
-  height: 207px;
+  width: 90%;
+  max-width: 898px; 
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -29,8 +27,6 @@
   line-height: 44px;
   letter-spacing: -0.01em;
   color: rgba(36, 31, 28, 1);
-  width: 898px;
-  height: 44px;
   margin-bottom: 20px;
 }
 
@@ -46,4 +42,20 @@
   font-size: 36px;
   color: #388e3c;
   animation: bounce 1s infinite;
+}
+
+@media (max-width: 768px) {
+  .text-title-hero-h {
+    margin: auto;
+    width: 80%;}
+
+  .arrow-down {
+    font-size: 30px; /* Ajustar tamaño de la flecha */
+  }
+  .container-text-hero-h{
+    padding-top: 15%;
+    width: 100%;
+    display: flex;
+    gap: 32px;
+  }
 }

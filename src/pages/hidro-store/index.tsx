@@ -4,8 +4,8 @@ import "./styles.css";
 import "../../app/globals.css";
 import FooterComponent from "@/components/footer";
 import HidroStor from "./components/hidro-store/index";
-import MinistoreComponent from "./components/mini-store/index";
-import BuildComponent from "./components/we-build/index";
+//import MinistoreComponent from "./components/mini-store/index";
+//import BuildComponent from "./components/we-build/index";
 import ContComponent from "../about/components/contac";
 import UneComponent from "../about/components/unete";
 import NavbarComponent from "@/components/navbar";
@@ -16,8 +16,8 @@ const HdirostoreComponent = () => {
       <NavbarComponent backgroundColor="rgba(255, 255, 255, 0.4)" />
       <main className="content">
         <HidroStor />
-        <BuildComponent />
-        <MinistoreComponent />
+        {/* <BuildComponent />
+        <MinistoreComponent /> */}
         <ContComponent />
         <UneComponent />
       </main>

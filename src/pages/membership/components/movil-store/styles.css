@@ -140,7 +140,35 @@
     padding: 10px; /* Reduce el padding */
     gap: 16px; /* Ajusta el espacio entre tarjetas */
   }
-
+  .filters-store-men {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-button-store-men {
+    padding: 10px 20px;
+    border: 1px solid rgba(159, 219, 142, 1);
+    border-radius: 20px;
+    background: rgba(235, 254, 230, 1);
+    color: rgba(36, 31, 28, 1);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .filter-button-store-men.active {
+    background: rgba(72, 186, 40, 1);
+    color: #fff;
+    border: none;
+  }
+  
+  .filter-button-store-men:hover {
+    background: rgba(72, 186, 40, 0.8);
+    color: white;
+  }
   .pricing-container-store-men {
     flex-direction: column; /* Asegura que las tarjetas se apilen */
     align-items: center; /* Centra las tarjetas */

@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-
+import "../../../../app/globals.css";
 const StormenComponent = () => {
   return (
     <div className="container-home-hero-h">
