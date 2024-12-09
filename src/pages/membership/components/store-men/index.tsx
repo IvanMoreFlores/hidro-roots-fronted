@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 import Image from "next/image";
 import DividerComponent from "../../../product/components/divider/index";
-import Dropdown from "./D";
+import Dropdown from "./Card";
 
 const HComponent = () => {
   const dropdownItems = [
