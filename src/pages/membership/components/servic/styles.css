@@ -50,9 +50,6 @@
     flex-direction: row;
     align-items: center;
     gap: 16px;
-    width: 898px;
-    height: 500px;
-    gap: 12px;
     margin-bottom: 72px;
 }
 
@@ -92,4 +89,47 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: rgba(255,255, 255, 1);
+}
+
+@media (max-width: 768px) {
+    .container-body-servi {
+        padding: 16px;
+    }
+
+    .container-title-servi {
+        margin-bottom: 24px;
+    }
+
+    .grid-container-servi {
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        height: auto;
+    }
+
+    .div-image-servi {
+        width: 100%;
+    
+    }
+
+    .image1 {
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    .image-overlay {
+        border-radius: 16px;
+    }
+
+    .overlay-text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .contact-button {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 16px;
+    }
 }

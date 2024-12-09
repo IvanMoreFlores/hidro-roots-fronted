@@ -7,7 +7,8 @@ import FooterComponent from "@/components/footer";
 import HeroComponent from "./components/hero";
 import ProductsComponent from "./components/products";
 import DividerComponent from "./components/divider";
-import BenefictsComponent from "./components/beneficts"; import FunctionsComponent from "./components/functions";
+import BenefictsComponent from "./components/beneficts"; 
+import FunctionsComponent from "./components/functions";
 import Section01Component from "@/components/section";
 import SpaceComponent from "./components/space";
 import ContComponent from "../about/components/contac";
@@ -36,7 +37,7 @@ const HomePage = () => {
         <SpaceComponent />
         <CustComponent />
         <ContComponent />
-        <UneComponent />  
+        <UneComponent />
       </main>
        <FooterComponent /> 
       <Modal isOpen={isModalOpen} onClose={closeModal} text="Hola, soy un modal!" />
