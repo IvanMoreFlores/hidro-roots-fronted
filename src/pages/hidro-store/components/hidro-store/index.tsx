@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 import Img from "next/image";
 import DividerComponent from "../../../product/components/divider/index";
-
+import "../../../../app/globals.css";
 const HidroStor = () => {
   const [quantity, setQuantity] = useState(1);
   const [showDescription, setShowDescription] = useState(false);

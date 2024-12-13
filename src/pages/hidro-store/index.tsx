@@ -2,12 +2,12 @@
 import React from "react";
 import "./styles.css";
 import "../../app/globals.css";
-//import FooterComponent from "@/components/footer";
+import FooterComponent from "@/components/footer";
 import HidroStor from "./components/hidro-store/index";
 //import MinistoreComponent from "./components/mini-store/index";
 //import BuildComponent from "./components/we-build/index";
-//import ContComponent from "../about/components/contac";
-//import UneComponent from "../about/components/unete";
+import ContComponent from "../about/components/contac";
+import UneComponent from "../about/components/unete";
 import NavbarComponent from "@/components/navbar";
 
 const HdirostoreComponent = () => {
@@ -18,10 +18,10 @@ const HdirostoreComponent = () => {
         <HidroStor />
         {/* <BuildComponent />
         <MinistoreComponent /> */}
-        {/* <ContComponent />
-        <UneComponent /> */}
+        <ContComponent />
+        <UneComponent />
       </main>
-      {/* <FooterComponent /> */}
+      <FooterComponent /> 
     </div>
   );
 };
