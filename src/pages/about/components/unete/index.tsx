@@ -22,7 +22,7 @@ const UneComponent = () => {
             name="name"
           />
         </div>
-        <Button width="100%">Enviar</Button>
+        <Button  width="100%">Enviar</Button>
         <p className="text-description-dos">
           Somos más de <span style={{ color: "green" }}>2,000</span> clientes
           felices

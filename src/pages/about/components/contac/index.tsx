@@ -27,7 +27,7 @@ const ContComponent = () => {
             rows={4}
           />
         </div>
-        <Button width="100%">Enviar</Button>
+        <Button className = "bbt12" width="100%">Enviar</Button>
       </div>
     </div>
   );
