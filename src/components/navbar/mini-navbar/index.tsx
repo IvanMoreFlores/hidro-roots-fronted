@@ -21,7 +21,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
             </div>
             <div className="padre-mini-menu">
                 <Image src="/img/nv.png" alt="Logo" width={
-                    890} height={890} className="imagen-nb"/>
+                    890} height={890} className="imagen-n"/>
                 <ul className="mobile-menu-list">
                     <li className="Inicio"><Link href="/">Inicio</Link></li>
                     <li className="Nosotros"><Link href="/about">Nosotros</Link></li>

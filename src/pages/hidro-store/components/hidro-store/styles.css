@@ -330,13 +330,30 @@
 
 @media (max-width: 768px) {
     .product-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         padding-top: 15%;
+        display: flex;
+       
     }
 
     .container-hidro-store {
         padding: 0px;
         width: 100%;
     }
-  
+
+    .container-productos-detail {
+        padding-right: 0px !important;
+        width: 100% !important;
+    }
+
+    .product-details {
+        width: 100% !important;
+    }
+    .product-image{
+        width: 100%;
+         
+    }
+    .product-info{
+        margin: auto;
+    }
 }
